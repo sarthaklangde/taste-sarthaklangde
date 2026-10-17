@@ -1,0 +1,33 @@
+{
+  "id": "lisbon-zubir-churrasqueira",
+  "name": "Zubir Churrasqueira",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "grilled-chicken",
+  "verdict": "good-if-nearby",
+  "take": "Desi grilled chicken. Order it in, don't dine in.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "desi-grilled-chicken",
+      "labels": [],
+      "myWay": "With sour cream and green chutney."
+    },
+    {
+      "id": "cheese-naan",
+      "labels": [],
+      "myWay": "Pair it with the chicken."
+    }
+  ],
+  "note": null,
+  "tags": [
+    "delivery only"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/YQzNJPFgBP3WGau68",
+  "website": null,
+  "multipleLocations": true,
+  "photo": null
+}

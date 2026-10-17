@@ -1,0 +1,28 @@
+{
+  "id": "lisbon-chickinho",
+  "name": "Chickinho",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "grilled-chicken",
+  "verdict": "good-if-nearby",
+  "take": "Boneless chicken combo with rice. Order it in.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "frango-desossado",
+      "labels": [],
+      "myWay": "Comes with rice."
+    }
+  ],
+  "note": "Better as delivery than dine in. A Valenciana is still the best.",
+  "tags": [
+    "delivery only"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/eqoVr3yute9NsgnZ8",
+  "website": "https://chickinho.pt",
+  "multipleLocations": true,
+  "photo": null
+}

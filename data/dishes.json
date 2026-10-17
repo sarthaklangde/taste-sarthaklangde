@@ -16,6 +16,13 @@
       "devil prawns"
     ]
   },
+  "cheese-naan": {
+    "name": "Cheese naan",
+    "explainer": "A leavened flatbread from South Asia, baked against the hot walls of a tandoor or in a hot pan, with melted cheese inside or on top.",
+    "aliases": [
+      "cheese naan bread"
+    ]
+  },
   "chicken-biryani": {
     "name": "Chicken biryani",
     "explainer": "A layered rice dish from South Asia where spiced chicken is cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
@@ -70,11 +77,50 @@
       "french fries"
     ]
   },
+  "desi-grilled-chicken": {
+    "name": "Desi grilled chicken",
+    "explainer": "Chicken pieces marinated in yogurt and South Asian spices, then grilled over charcoal or fire until charred at the edges and juicy inside.",
+    "aliases": [
+      "desi chicken",
+      "grilled desi chicken",
+      "frango de churrasco"
+    ]
+  },
   "falafel": {
     "name": "Falafel",
     "explainer": "Deep-fried balls or patties made from ground chickpeas or fava beans mixed with herbs and spices, usually served in pita or on a plate with tahini or salad.",
     "aliases": [
       "falafels"
+    ]
+  },
+  "frango-assado": {
+    "name": "Frango assado (Portuguese grilled chicken)",
+    "explainer": "A Portuguese dish of whole chicken seasoned with garlic, paprika, wine and herbs, then roasted or grilled over charcoal or on a spit until the skin is crisp and the meat stays juicy. Often served with fries, rice or salad.",
+    "aliases": [
+      "frango no churrasco",
+      "frango assado no churrasco",
+      "Portuguese grilled chicken",
+      "churrasco chicken"
+    ]
+  },
+  "frango-desossado": {
+    "name": "Boneless chicken combo",
+    "explainer": "Chicken pieces with the bone removed, usually grilled or roasted and served with sides. Frango is the Portuguese word for chicken, and desossado means boneless.",
+    "aliases": [
+      "boneless chicken",
+      "boneless chicken combo",
+      "frango desossado"
+    ]
+  },
+  "grilled-chicken-plate": {
+    "name": "Grilled chicken plate",
+    "explainer": "Grilled chicken served with rice and fried potatoes, a common plate in Portuguese grill houses. Piri piri, a hot sauce made from African bird's-eye chilies with olive oil, garlic and lemon, is the usual condiment.",
+    "aliases": [
+      "frango no churrasco",
+      "chicken with rice and chips",
+      "chicken thighs with rice and chips",
+      "piri piri chicken",
+      "piri piri"
     ]
   },
   "jalapeno-poppers": {

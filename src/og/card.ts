@@ -23,7 +23,7 @@ const shadow = (n: number) => `${n}px ${n}px 0 0 ${INK}`
 // Hex values for the Tailwind classes used in catalog.ts.
 const HEX: Record<string, string> = {
   "bg-orange-100": "#ffedd5", "bg-orange-200": "#fed7aa", "bg-orange-300": "#fdba74",
-  "bg-amber-100": "#fef3c7", "bg-amber-200": "#fde68a", "bg-yellow-100": "#fef9c3",
+  "bg-amber-100": "#fef3c7", "bg-amber-200": "#fde68a", "bg-amber-300": "#fcd34d", "bg-yellow-100": "#fef9c3",
   "bg-yellow-200": "#fef08a", "bg-yellow-300": "#fde047", "bg-lime-100": "#ecfccb",
   "bg-lime-200": "#d9f99d", "bg-lime-300": "#bef264", "bg-green-200": "#bbf7d0",
   "bg-emerald-200": "#a7f3d0", "bg-teal-200": "#99f6e4", "bg-cyan-200": "#a5f3fc",

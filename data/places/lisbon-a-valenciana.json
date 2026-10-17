@@ -1,0 +1,37 @@
+{
+  "id": "lisbon-a-valenciana",
+  "name": "A Valenciana",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "grilled-chicken",
+  "verdict": "go-out-of-your-way",
+  "take": "My favourite grilled chicken in town.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "frango-assado",
+      "labels": [
+        {
+          "text": "tender",
+          "emoji": "🥩"
+        },
+        {
+          "text": "cooked well",
+          "emoji": "🔥"
+        }
+      ],
+      "myWay": "With the extra spicy sauce."
+    }
+  ],
+  "note": null,
+  "tags": [
+    "dine in"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/eAu52zyDCnhk6JU87",
+  "website": "https://www.restauranteavalenciana.pt/",
+  "multipleLocations": false,
+  "photo": null
+}

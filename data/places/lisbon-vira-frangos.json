@@ -1,0 +1,28 @@
+{
+  "id": "lisbon-vira-frangos",
+  "name": "Vira Frangos",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "grilled-chicken",
+  "verdict": "good-if-nearby",
+  "take": "Healthy kinda chicken but still tasty.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "grilled-chicken-plate",
+      "labels": [],
+      "myWay": "Two thighs with toasted rice and chips. Extra piri piri forte sauce."
+    }
+  ],
+  "note": "I go to the Silva Carvalho one.",
+  "tags": [
+    "healthy"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/mRncomTQZCApKGDb8",
+  "website": "https://virafrangos.pt",
+  "multipleLocations": true,
+  "photo": null
+}

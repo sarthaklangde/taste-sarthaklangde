@@ -24,6 +24,7 @@ export const CUISINES: Record<string, { name: string; emoji: string; color: stri
   macanese: { name: "Macanese", emoji: "🥢", color: "bg-red-200" },
   chinese: { name: "Chinese", emoji: "🥟", color: "bg-red-100" },
   thai: { name: "Thai", emoji: "🌶️", color: "bg-green-200" },
+  "grilled-chicken": { name: "Grilled chicken", emoji: "🍗", color: "bg-amber-300" },
   "fried-chicken": { name: "Fried chicken", emoji: "🍗", color: "bg-orange-300" },
   korean: { name: "Korean", emoji: "🥘", color: "bg-pink-200" },
   mexican: { name: "Mexican", emoji: "🌮", color: "bg-lime-100" },
@@ -63,6 +64,10 @@ export const TAG_EMOJI: Record<string, string> = {
   "late night": "🌙",
   cheap: "💸",
   fusion: "🔀",
+  "dine in": "🍽️",
+  healthy: "🥗",
+  delivery: "🛵",
+  "delivery only": "🛵",
 }
 
 export const tagEmoji = (tag: string) =>
