@@ -1,6 +1,7 @@
 // Serves index.html with link-preview tags for the view in the URL, so a shared
 // link like /?city=lisbon&q=biryani previews as that exact list.
 // vercel.json only routes "/" here when city, cuisine or q is present.
+import { ogKey } from "../src/og/card"
 import { paramsFrom, resolveView } from "../src/lib/view"
 
 export const config = { runtime: "edge" }
@@ -21,7 +22,8 @@ export default async function handler(req: Request) {
   }
 
   const page = `${url.origin}/${view.search}`
-  const image = `${url.origin}/api/og${view.search}`
+  const key = ogKey(view)
+  const image = key ? `${url.origin}/og/${key}.png` : `${url.origin}/api/og${view.search}`
   const tags = [
     `<title>${esc(view.title)}</title>`,
     `<meta name="description" content="${esc(view.description)}" />`,
@@ -32,6 +34,9 @@ export default async function handler(req: Request) {
     `<meta property="og:image" content="${esc(image)}" />`,
     `<meta property="og:image:width" content="1200" />`,
     `<meta property="og:image:height" content="630" />`,
+    `<meta property="og:image:type" content="image/png" />`,
+    `<meta property="og:image:alt" content="${esc(view.title)}" />`,
+    `<meta property="og:site_name" content="Sarthak's taste" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${esc(view.title)}" />`,
     `<meta name="twitter:description" content="${esc(view.description)}" />`,

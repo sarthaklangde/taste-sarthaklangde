@@ -1,6 +1,6 @@
 # taste.sarthaklangde.com
 
-Restaurants I like in Lisbon, Mumbai and Ho Chi Minh City, and what to order there.
+Restaurants I like, and what to order there.
 
 Static site: Vite, React, Tailwind, shadcn/ui. Data is JSON in `data/`.
 

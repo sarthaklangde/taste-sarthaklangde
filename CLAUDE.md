@@ -22,7 +22,9 @@ Never publish without his approval. Never add opinions he didn't give.
 Filters are query params so any view is shareable: `?city=lisbon&cuisine=indian&q=tikka+masala`.
 - `src/lib/view.ts` turns params into title, description and results. The app, `api/page.ts` and `api/og.ts` all use it. Keep its imports relative.
 - `vercel.json` routes `/` to `api/page.ts` only when `city`, `cuisine` or `q` is set. It serves `index.html` with the tags between `<!-- og:start -->` and `<!-- og:end -->` swapped for that view. Do not use Vercel middleware here: it crashed the whole site once (Oct 2026).
-- `api/og.ts` draws the 1200x630 preview image. Pinned to `@vercel/og@0.9.0` because 1.0.3 ships without a wasm file it needs.
+- Preview image design lives in `src/og/card.ts`. `scripts/build-og.ts` prebuilds `public/og/<city>[--<cuisine>].png` for the homepage, every city and every city + cuisine at build time (instant for crawlers). `api/og.ts` renders live only for free-text searches. Fonts and photo live in `api/_assets/` (photo is the one sarthaklangde.com uses).
+- `api/og.ts` is pinned to `@vercel/og@0.9.0` because 1.0.3 ships without a wasm file it needs.
+- Preview copy never lists all cities. Name a city or cuisine only when the link is for it.
 
 ## Git
 - Work on `main`. No branches or PRs (Sarthak's call, overrides the workspace rule).

@@ -15,6 +15,10 @@ export type View = {
   cuisines: string[]
   inCity: Place[]
   results: Place[]
+  /** Results without closed places, for previews. */
+  open: Place[]
+  /** "Burgers", "Biryani", or null when only a city is picked. */
+  what: string | null
   filtered: boolean
   title: string
   description: string
@@ -23,7 +27,7 @@ export type View = {
 
 export const SITE_TITLE = "Sarthak's taste"
 export const SITE_DESCRIPTION =
-  "Restaurants I like in Lisbon, Mumbai and Ho Chi Minh City, and what to order."
+  "Restaurants I like, and what to order there."
 
 export function paramsFrom(sp: URLSearchParams): ViewParams {
   return { city: sp.get("city"), cuisine: sp.get("cuisine"), q: sp.get("q") ?? "" }
@@ -45,21 +49,26 @@ export function resolveView(params: ViewParams): View {
   const results = search(pool, query)
 
   const filtered = Boolean(params.city || cuisine || params.q.trim())
-  const what = terms(query).join(" ") || (cuisine ? CUISINES[cuisine].name : "")
-  const title = filtered
-    ? `Sarthak's ${what ? `${what.toLowerCase()} ` : ""}picks in ${city.name}`
-    : SITE_TITLE
-  const names = results.slice(0, 3).map((p) => p.name)
+  const words = terms(query).join(" ")
+  const raw = words || (cuisine ? CUISINES[cuisine].name : "")
+  const what = raw ? raw[0].toUpperCase() + raw.slice(1) : null
+  // "Burgers in Lisbon, picked by Sarthak" reads right for both dishes and cuisines.
+  const title = !filtered
+    ? SITE_TITLE
+    : what
+      ? `${what} in ${city.name}, picked by Sarthak`
+      : `Sarthak's picks in ${city.name}`
+  const open = results.filter((p) => p.status !== "closed")
+  const names = open.slice(0, 3).map((p) => p.name)
   const description = !filtered
     ? SITE_DESCRIPTION
     : names.length
-      ? `${names.join(", ")}${results.length > 3 ? ` and ${results.length - 3} more` : ""}. What to order and what to skip.`
+      ? `${names.join(", ")}${open.length > 3 ? ` and ${open.length - 3} more` : ""}. What to order and what to skip.`
       : `Nothing for that in ${city.name} yet.`
 
   const sp = new URLSearchParams({ city: city.id })
   if (cuisine) sp.set("cuisine", cuisine)
-  const cleanQuery = terms(query).join(" ")
-  if (cleanQuery) sp.set("q", cleanQuery)
+  if (words) sp.set("q", words)
 
   return {
     city,
@@ -68,6 +77,8 @@ export function resolveView(params: ViewParams): View {
     cuisines,
     inCity,
     results,
+    open,
+    what,
     filtered,
     title,
     description,

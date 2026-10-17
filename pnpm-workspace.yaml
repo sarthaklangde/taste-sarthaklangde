@@ -1,0 +1,2 @@
+allowBuilds:
+  '@resvg/resvg-js': true
