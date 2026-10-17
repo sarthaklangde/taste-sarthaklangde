@@ -32,6 +32,49 @@
       "photo": null
     },
     {
+      "id": "lisbon-casa-nepalesa",
+      "name": "Casa Nepalesa",
+      "city": "lisbon",
+      "neighborhood": null,
+      "cuisine": "indian",
+      "verdict": "go-out-of-your-way",
+      "take": "My favourite place for desi food in town.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "kukhura-ra-bholte-khursani",
+          "labels": [
+            {
+              "text": "so delish",
+              "emoji": "😋"
+            }
+          ],
+          "myWay": "Extra spicy if you like, with desi roti or malahi roti."
+        },
+        {
+          "id": "kukhurako-chhati-bhungroma",
+          "labels": [
+            {
+              "text": "so tasty",
+              "emoji": "🤤"
+            }
+          ],
+          "myWay": "Think chicken tikka, but elevated."
+        }
+      ],
+      "note": "They use weird names for an Indian restaurant, but the service is so good and so hospitable. I like the ambience as well.",
+      "tags": [
+        "date night"
+      ],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Casa+Nepalesa+Lisbon",
+      "website": "https://www.tankasapkota.pt/en/restaurants/casa-nepalesa/",
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
       "id": "lisbon-costa-do-malabar",
       "name": "Costa do Malabar",
       "city": "lisbon",
@@ -346,6 +389,27 @@
       "explainer": "Chicken pieces coated in a thin, seasoned batter and fried until very crisp, often fried twice for a lighter, crackly crust, and served plain or with a sweet, spicy or garlicky glaze.",
       "aliases": [
         "korean chicken"
+      ]
+    },
+    "kukhura-ra-bholte-khursani": {
+      "name": "Kukhura ra bholte khursani (Nepali chicken with chilies)",
+      "explainer": "Chicken pieces sautéed with onion, tomato, green pepper, ginger and chilies, forming a spicy, thick, stir-fry-style curry. In Nepali, kukhura means chicken and khursani means chili.",
+      "aliases": [
+        "kukhura bholte khursani",
+        "chicken bholte khursani",
+        "Nepali chicken with chilies",
+        "Nepali chilli chicken"
+      ]
+    },
+    "kukhurako-chhati-bhungroma": {
+      "name": "Kukhurako chhati bhungroma (chargrilled chicken breast)",
+      "explainer": "Boneless chicken breast marinated in yogurt and spices, then chargrilled until charred at the edges and juicy inside. It is a Nepali-style grilled chicken, close to Indian chicken tikka. In Nepali, kukhurako chhati means chicken breast.",
+      "aliases": [
+        "kukhurako chhati",
+        "chicken breast bhungroma",
+        "chicken tikka",
+        "elevated chicken tikka",
+        "Nepali chicken tikka"
       ]
     },
     "mangalorean-chicken": {

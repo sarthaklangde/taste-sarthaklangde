@@ -1,0 +1,43 @@
+{
+  "id": "lisbon-casa-nepalesa",
+  "name": "Casa Nepalesa",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "go-out-of-your-way",
+  "take": "My favourite place for desi food in town.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "kukhura-ra-bholte-khursani",
+      "labels": [
+        {
+          "text": "so delish",
+          "emoji": "😋"
+        }
+      ],
+      "myWay": "Extra spicy if you like, with desi roti or malahi roti."
+    },
+    {
+      "id": "kukhurako-chhati-bhungroma",
+      "labels": [
+        {
+          "text": "so tasty",
+          "emoji": "🤤"
+        }
+      ],
+      "myWay": "Think chicken tikka, but elevated."
+    }
+  ],
+  "note": "They use weird names for an Indian restaurant, but the service is so good and so hospitable. I like the ambience as well.",
+  "tags": [
+    "date night"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Casa+Nepalesa+Lisbon",
+  "website": "https://www.tankasapkota.pt/en/restaurants/casa-nepalesa/",
+  "multipleLocations": false,
+  "photo": null
+}

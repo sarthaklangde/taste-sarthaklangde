@@ -84,6 +84,27 @@
       "korean chicken"
     ]
   },
+  "kukhura-ra-bholte-khursani": {
+    "name": "Kukhura ra bholte khursani (Nepali chicken with chilies)",
+    "explainer": "Chicken pieces sautéed with onion, tomato, green pepper, ginger and chilies, forming a spicy, thick, stir-fry-style curry. In Nepali, kukhura means chicken and khursani means chili.",
+    "aliases": [
+      "kukhura bholte khursani",
+      "chicken bholte khursani",
+      "Nepali chicken with chilies",
+      "Nepali chilli chicken"
+    ]
+  },
+  "kukhurako-chhati-bhungroma": {
+    "name": "Kukhurako chhati bhungroma (chargrilled chicken breast)",
+    "explainer": "Boneless chicken breast marinated in yogurt and spices, then chargrilled until charred at the edges and juicy inside. It is a Nepali-style grilled chicken, close to Indian chicken tikka. In Nepali, kukhurako chhati means chicken breast.",
+    "aliases": [
+      "kukhurako chhati",
+      "chicken breast bhungroma",
+      "chicken tikka",
+      "elevated chicken tikka",
+      "Nepali chicken tikka"
+    ]
+  },
   "mangalorean-chicken": {
     "name": "Mangalorean chicken",
     "explainer": "A chicken curry from the Mangalorean coast of Karnataka in southwest India, typically cooked in a spiced gravy with chilies, coconut and tamarind.",
