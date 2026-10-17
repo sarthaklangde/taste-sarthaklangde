@@ -210,6 +210,13 @@
       "smash burgers"
     ]
   },
+  "tofu-fried-rice": {
+    "name": "Tofu fried rice",
+    "explainer": "Steamed rice stir-fried in a hot wok with cubes or strips of tofu, egg or vegetables, garlic, soy sauce and spring onion, a simple everyday rice dish in Vietnamese and other East and Southeast Asian kitchens.",
+    "aliases": [
+      "tofu fried rice"
+    ]
+  },
   "tom-yum-soup": {
     "name": "Tom yum soup",
     "explainer": "A hot and sour Thai soup flavoured with lemongrass, galangal, kaffir lime leaves and chilies, usually made with shrimp or chicken and mushrooms.",

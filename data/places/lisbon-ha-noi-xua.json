@@ -1,0 +1,26 @@
+{
+  "id": "lisbon-ha-noi-xua",
+  "name": "Ha Noi Xua",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "vietnamese",
+  "verdict": "good-if-nearby",
+  "take": "Get the tofu fried rice. I like it spicy.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "tofu-fried-rice",
+      "labels": [],
+      "myWay": "With extra chilli jam on the side."
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/oCt1DADd4h4ybVE37",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}
