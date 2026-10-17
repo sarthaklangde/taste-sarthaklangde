@@ -582,6 +582,16 @@
             }
           ],
           "myWay": null
+        },
+        {
+          "id": "kadala-curry",
+          "labels": [
+            {
+              "text": "good too",
+              "emoji": "👍"
+            }
+          ],
+          "myWay": null
         }
       ],
       "note": null,
@@ -938,6 +948,15 @@
       "aliases": [
         "jalapeno poppers",
         "poppers"
+      ]
+    },
+    "kadala-curry": {
+      "name": "Kadala curry",
+      "explainer": "A Kerala curry of black chickpeas simmered in a spiced coconut gravy, usually eaten with puttu, appam or dosa.",
+      "aliases": [
+        "kadala",
+        "chickpea curry",
+        "black chickpea curry"
       ]
     },
     "karaka-special": {

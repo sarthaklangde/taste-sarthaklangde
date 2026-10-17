@@ -31,6 +31,16 @@
         }
       ],
       "myWay": null
+    },
+    {
+      "id": "kadala-curry",
+      "labels": [
+        {
+          "text": "good too",
+          "emoji": "👍"
+        }
+      ],
+      "myWay": null
     }
   ],
   "note": null,
