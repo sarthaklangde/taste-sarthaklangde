@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    { "src": "/", "has": [{ "type": "query", "key": "q" }], "dest": "/api/page" },
+    { "src": "/", "has": [{ "type": "query", "key": "city" }], "dest": "/api/page" },
+    { "src": "/", "has": [{ "type": "query", "key": "cuisine" }], "dest": "/api/page" },
+    { "handle": "filesystem" }
+  ]
+}

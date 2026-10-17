@@ -20,8 +20,8 @@ Never publish without his approval. Never add opinions he didn't give.
 
 ## URL and link previews
 Filters are query params so any view is shareable: `?city=lisbon&cuisine=indian&q=tikka+masala`.
-- `src/lib/view.ts` turns params into title, description and results. The app, `middleware.ts` and `api/og.ts` all use it. Keep its imports relative.
-- `middleware.ts` rewrites the head tags between `<!-- og:start -->` and `<!-- og:end -->` in `index.html` for filtered URLs.
+- `src/lib/view.ts` turns params into title, description and results. The app, `api/page.ts` and `api/og.ts` all use it. Keep its imports relative.
+- `vercel.json` routes `/` to `api/page.ts` only when `city`, `cuisine` or `q` is set. It serves `index.html` with the tags between `<!-- og:start -->` and `<!-- og:end -->` swapped for that view. Do not use Vercel middleware here: it crashed the whole site once (Oct 2026).
 - `api/og.ts` draws the 1200x630 preview image. Pinned to `@vercel/og@0.9.0` because 1.0.3 ships without a wasm file it needs.
 
 ## Git
