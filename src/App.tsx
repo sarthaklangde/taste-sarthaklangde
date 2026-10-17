@@ -127,7 +127,6 @@ export default function App() {
       {view.filtered && results.length > 0 && (
         <div className="mt-4">
           <ShareButton
-            title={view.title}
             url={`${window.location.origin}/${view.search}`}
             count={results.length}
           />
