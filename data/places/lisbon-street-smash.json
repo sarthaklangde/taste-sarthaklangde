@@ -1,0 +1,31 @@
+{
+  "id": "lisbon-street-smash",
+  "name": "Street Smash",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "burger",
+  "verdict": "good-if-nearby",
+  "take": "Where I go for smash burgers.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "street-burger",
+      "labels": [],
+      "myWay": "Double patty."
+    },
+    {
+      "id": "classic-fries",
+      "labels": [],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Street+Smash+Lisbon",
+  "website": null,
+  "multipleLocations": true,
+  "photo": null
+}

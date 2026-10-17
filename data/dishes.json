@@ -45,6 +45,23 @@
       "tikka masala"
     ]
   },
+  "chipotle-burger": {
+    "name": "Chipotle Burger",
+    "explainer": "A beef burger with cheddar, caramelised onions, jalapeños and a smoky, spicy chipotle sauce.",
+    "aliases": [
+      "jalapeno burger",
+      "jalapeño burger",
+      "chipotle burger"
+    ]
+  },
+  "classic-fries": {
+    "name": "Classic fries",
+    "explainer": "Potato cut into sticks and deep-fried until golden and crisp, then salted and served as a side.",
+    "aliases": [
+      "fries",
+      "french fries"
+    ]
+  },
   "falafel": {
     "name": "Falafel",
     "explainer": "Deep-fried balls or patties made from ground chickpeas or fava beans mixed with herbs and spices, usually served in pita or on a plate with tahini or salad.",
@@ -92,6 +109,14 @@
       "pat bai grapao",
       "kra pao",
       "basil chicken"
+    ]
+  },
+  "street-burger": {
+    "name": "Street Burger",
+    "explainer": "A smash burger is a ball of beef pressed flat on a very hot griddle so the edges turn crisp while the middle stays juicy, usually served in a soft bun with cheese, onions and pickles.",
+    "aliases": [
+      "smash burger",
+      "smash burgers"
     ]
   },
   "tom-yum-soup": {
