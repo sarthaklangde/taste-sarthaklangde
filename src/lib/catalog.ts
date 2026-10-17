@@ -53,5 +53,20 @@ export const VERDICTS: Record<Verdict, { label: string; emoji: string; rank: num
   skip: { label: "Skip it", emoji: "🙅", rank: 2, className: "bg-rose-200" },
 }
 
+/** Emoji for place tags. Unknown tags get ✨. */
+export const TAG_EMOJI: Record<string, string> = {
+  "date night": "🕯️",
+  "fancy dinner": "🥂",
+  quiet: "🤫",
+  solo: "🙋",
+  group: "👯",
+  "late night": "🌙",
+  cheap: "💸",
+  fusion: "🔀",
+}
+
+export const tagEmoji = (tag: string) =>
+  TAG_EMOJI[tag] ?? (tag.includes("fusion") ? TAG_EMOJI.fusion : "✨")
+
 /** Places not visited for this many months show a "might have changed" note. */
 export const STALE_AFTER_MONTHS = 18

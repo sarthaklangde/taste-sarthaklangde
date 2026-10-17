@@ -1,0 +1,54 @@
+{
+  "id": "lisbon-gunpowder",
+  "name": "Gunpowder",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "good-if-nearby",
+  "take": "Fancy dinner spot. Expensive, and two dishes are excellent.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "mustard-malai-broccoli",
+      "labels": [
+        {
+          "text": "excellent",
+          "emoji": "🤩"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "old-delhi-butter-chicken",
+      "labels": [
+        {
+          "text": "excellent",
+          "emoji": "🤩"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "aloo-chaat",
+      "labels": [
+        {
+          "text": "very good",
+          "emoji": "👍"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [
+    "fancy dinner",
+    "Indian-Portuguese fusion"
+  ],
+  "price": 3,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Gunpowder+Lisboa+Lisbon",
+  "website": "https://gunpowderrestaurants.com/pt-lisbon/",
+  "multipleLocations": false,
+  "photo": null
+}

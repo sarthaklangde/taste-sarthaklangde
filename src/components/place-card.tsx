@@ -4,12 +4,13 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { CUISINES, VERDICTS } from "@/lib/catalog"
+import { CUISINES, tagEmoji, VERDICTS } from "@/lib/catalog"
 import { DISHES, isStale } from "@/lib/data"
 import type { Place } from "@/lib/types"
 import { cn } from "@/lib/utils"
 
 const RANK_COLORS = ["bg-yellow-300", "bg-orange-200", "bg-pink-200"]
+const TAG_COLORS = ["bg-violet-200", "bg-amber-200", "bg-teal-200", "bg-pink-200"]
 const LABEL_COLORS = [
   "bg-lime-200",
   "bg-pink-200",
@@ -106,10 +107,26 @@ export function PlaceCard({ place, highlight, index, open, onToggle }: Props) {
 
       {open && (
       <div className="flex flex-col gap-4 px-5 pt-1 pb-5 animate-in fade-in slide-in-from-top-1">
-      {place.multipleLocations && (
-        <span className="w-fit rounded-full bg-sky-100 px-2 py-0.5 text-xs font-bold">
-          📍 Several locations
-        </span>
+      {(place.tags.length > 0 || place.multipleLocations) && (
+        <div className="flex flex-wrap gap-1.5">
+          {place.tags.map((t, i) => (
+            <span
+              key={t}
+              className={cn(
+                "rounded-full border-2 border-foreground px-2.5 py-0.5 text-xs font-bold",
+                TAG_COLORS[i % TAG_COLORS.length],
+                i % 2 === 0 ? "rotate-1" : "-rotate-1",
+              )}
+            >
+              {tagEmoji(t.toLowerCase())} {t[0].toUpperCase() + t.slice(1)}
+            </span>
+          ))}
+          {place.multipleLocations && (
+            <span className="rounded-full bg-sky-100 px-2.5 py-0.5 text-xs font-bold">
+              📍 Several locations
+            </span>
+          )}
+        </div>
       )}
 
       <p className="font-heading text-lg leading-snug font-semibold">“{place.take}”</p>

@@ -168,6 +168,60 @@
       "photo": null
     },
     {
+      "id": "lisbon-gunpowder",
+      "name": "Gunpowder",
+      "city": "lisbon",
+      "neighborhood": null,
+      "cuisine": "indian",
+      "verdict": "good-if-nearby",
+      "take": "Fancy dinner spot. Expensive, and two dishes are excellent.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "mustard-malai-broccoli",
+          "labels": [
+            {
+              "text": "excellent",
+              "emoji": "🤩"
+            }
+          ],
+          "myWay": null
+        },
+        {
+          "id": "old-delhi-butter-chicken",
+          "labels": [
+            {
+              "text": "excellent",
+              "emoji": "🤩"
+            }
+          ],
+          "myWay": null
+        },
+        {
+          "id": "aloo-chaat",
+          "labels": [
+            {
+              "text": "very good",
+              "emoji": "👍"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": null,
+      "tags": [
+        "fancy dinner",
+        "Indian-Portuguese fusion"
+      ],
+      "price": 3,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Gunpowder+Lisboa+Lisbon",
+      "website": "https://gunpowderrestaurants.com/pt-lisbon/",
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
       "id": "lisbon-habibi",
       "name": "Habibi",
       "city": "lisbon",
@@ -306,6 +360,14 @@
     }
   ],
   "dishes": {
+    "aloo-chaat": {
+      "name": "Aloo chaat",
+      "explainer": "An Indian street-food snack of potatoes, fried or boiled until crisp, topped with yoghurt, tangy tamarind or mint chutney, spices and chickpeas.",
+      "aliases": [
+        "potato chaat",
+        "crispy potato chaat"
+      ]
+    },
     "camaroes-ao-diabo": {
       "name": "Camarões ao diabo (devil's shrimp)",
       "explainer": "Prawns cooked in a fiery sauce of chili, garlic and vinegar.",
@@ -425,6 +487,22 @@
       "explainer": "Macau's comfort dish: minced beef or pork stir-fried with soy sauce, onion and small cubes of fried potato, often topped with a fried egg and eaten with rice.",
       "aliases": [
         "minced beef"
+      ]
+    },
+    "mustard-malai-broccoli": {
+      "name": "Mustard malai broccoli",
+      "explainer": "Broccoli florets marinated in malai, a spiced cream mixture (malai means cream in Hindi) flavoured with mustard, then grilled until charred at the edges.",
+      "aliases": [
+        "malai broccoli",
+        "broccoli malai"
+      ]
+    },
+    "old-delhi-butter-chicken": {
+      "name": "Old Delhi butter chicken",
+      "explainer": "Butter chicken, also called murgh makhani, is chicken cooked in a rich, creamy tomato and butter sauce spiced with garam masala, a dish most closely associated with North Indian and Delhi cooking.",
+      "aliases": [
+        "butter chicken",
+        "murgh makhani"
       ]
     },
     "pad-kra-pao": {
