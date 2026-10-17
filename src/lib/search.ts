@@ -65,13 +65,13 @@ export function search(places: Place[], q: string): Place[] {
   const scored: { place: Place; score: number }[] = []
   for (const place of sorted) {
     const dishes = dishText(place)
+    // Name, cuisine and tags say what a place is; the take and notes only mention things.
+    const core = norm(
+      [place.name, place.cuisine, CUISINES[place.cuisine]?.name ?? "", place.tags.join(" ")].join(" "),
+    )
     const other = norm(
       [
-        place.name,
         place.neighborhood ?? "",
-        place.cuisine,
-        CUISINES[place.cuisine]?.name ?? "",
-        place.tags.join(" "),
         place.take,
         place.note ?? "",
         place.dishes.flatMap((d) => [...d.labels.map((l) => l.text), d.myWay ?? ""]).join(" "),
@@ -84,6 +84,7 @@ export function search(places: Place[], q: string): Place[] {
       const has = (text: string) => forms.some((f) => text.includes(f))
       const dishIdx = dishes.findIndex(has)
       if (dishIdx >= 0) score += 10 - dishIdx
+      else if (has(core)) score += 3
       else if (has(other)) score += 1
       else {
         ok = false
