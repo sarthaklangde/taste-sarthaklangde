@@ -21,6 +21,7 @@ const LABEL_COLORS = [
 
 function formatMonth(ym: string) {
   const [y, m] = ym.split("-").map(Number)
+  if (!m) return String(y)
   return new Date(y, m - 1).toLocaleDateString("en", { month: "short", year: "numeric" })
 }
 
@@ -36,7 +37,8 @@ type Props = {
 export function PlaceCard({ place, highlight, index, open, onToggle }: Props) {
   const verdict = VERDICTS[place.verdict]
   const cuisine = CUISINES[place.cuisine]
-  const stale = isStale(place)
+  const closed = place.status === "closed"
+  const stale = !closed && isStale(place)
   const meta = [
     place.neighborhood,
     cuisine ? `${cuisine.emoji} ${cuisine.name}` : place.cuisine,
@@ -54,6 +56,7 @@ export function PlaceCard({ place, highlight, index, open, onToggle }: Props) {
           ? "border-foreground bg-card shadow-[5px_5px_0_0_var(--foreground)]"
           : "border-transparent hover:border-foreground/15 hover:bg-card/60",
         stale && "opacity-75",
+        closed && "opacity-60 grayscale",
       )}
     >
       <button
@@ -82,7 +85,12 @@ export function PlaceCard({ place, highlight, index, open, onToggle }: Props) {
         )}
         <span className="min-w-0 flex-1">
           <span className="block text-sm text-muted-foreground">
-            {verdict.emoji} {verdict.label}
+            {closed ? (
+              <span className="mr-1.5 inline-block -rotate-2 rounded-full border-2 border-foreground bg-stone-300 px-2 text-xs font-bold text-foreground">
+                🪦 Closed
+              </span>
+            ) : null}
+            {verdict.emoji} {closed ? `Was ${verdict.label.toLowerCase()}` : verdict.label}
           </span>
           <span className="block truncate font-heading text-xl leading-tight font-extrabold tracking-tight">
             {place.name}
@@ -213,7 +221,8 @@ export function PlaceCard({ place, highlight, index, open, onToggle }: Props) {
           )}
         </div>
         <span className="text-right text-xs text-muted-foreground">
-          {stale ? "Might have changed · " : ""}Visited {formatMonth(place.lastVisited)}
+          {closed ? "Closed · last visit " : stale ? "Might have changed · Visited " : "Visited "}
+          {formatMonth(place.lastVisited)}
         </span>
       </div>
       </div>

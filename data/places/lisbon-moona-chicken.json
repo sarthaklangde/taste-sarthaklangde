@@ -1,0 +1,26 @@
+{
+  "id": "lisbon-moona-chicken",
+  "name": "Moona Chicken",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "korean",
+  "verdict": "go-out-of-your-way",
+  "take": "Best plain Korean fried chicken in town.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "korean-fried-chicken",
+      "labels": [],
+      "myWay": "Boneless, plain."
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Moona+Chicken+Lisbon",
+  "website": "https://moonachicken.com",
+  "multipleLocations": true,
+  "photo": null
+}

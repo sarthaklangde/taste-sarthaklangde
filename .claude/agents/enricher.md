@@ -27,7 +27,8 @@ Before writing, read `data/dishes.json` so you reuse existing dish ids, and read
 - `tags` are lowercase vibes or occasions he said explicitly ("date night", "quiet", "solo", "group", "late night", "cheap"). Empty if none.
 - `price` is 1, 2 or 3 only if he said it, else null. `neighborhood` only if he said it, else null.
 - `verdict`: "go-out-of-your-way" only if he says it's his favorite, the best, or a must. Otherwise "good-if-nearby". Mention your choice in your reply so he can confirm.
-- `lastVisited` is YYYY-MM. Use the current month unless the note says otherwise.
+- `lastVisited` is YYYY-MM, or YYYY if he only gives a year. Use the current month unless the note says otherwise.
+- `status` is "closed" if he says it closed, else "active". Closed places stay on the site with a Closed badge.
 - `maps`: use the Google Maps link he gave, if any. Otherwise `https://www.google.com/maps/search/?api=1&query=<name>+<city>` with spaces as `+`.
 - For each dish not in `data/dishes.json`, add it under `newDishes` with a one-sentence factual `explainer` written for someone who has never eaten that cuisine. Describe the dish in general, never this restaurant's version. Add common `aliases`.
 

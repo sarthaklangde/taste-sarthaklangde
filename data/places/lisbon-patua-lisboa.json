@@ -1,0 +1,49 @@
+{
+  "id": "lisbon-patua-lisboa",
+  "name": "Patuá Lisboa",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "macanese",
+  "verdict": "good-if-nearby",
+  "take": "The star is the chicken cafreal.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "chicken-cafreal",
+      "labels": [
+        {
+          "text": "so fresh",
+          "emoji": "🥬"
+        },
+        {
+          "text": "so good",
+          "emoji": "😋"
+        },
+        {
+          "text": "so coriandery",
+          "emoji": "🌿"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "camaroes-ao-diabo",
+      "labels": [],
+      "myWay": null
+    },
+    {
+      "id": "minchi",
+      "labels": [],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2025",
+  "status": "closed",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Patu%C3%A1+Lisboa",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}

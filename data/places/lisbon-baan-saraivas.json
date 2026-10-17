@@ -1,0 +1,31 @@
+{
+  "id": "lisbon-baan-saraivas",
+  "name": "BAAN Saraiva's",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "thai",
+  "verdict": "good-if-nearby",
+  "take": "Go for the pad kra pao. Tom yum is good too.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "pad-kra-pao",
+      "labels": [],
+      "myWay": "Order the Pat Bai Grapao with chicken, extra spicy."
+    },
+    {
+      "id": "tom-yum-soup",
+      "labels": [],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=BAAN+Saraiva's+Lisbon",
+  "website": "https://www.baansaraivas.com/",
+  "multipleLocations": false,
+  "photo": null
+}

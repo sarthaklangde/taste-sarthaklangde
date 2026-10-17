@@ -19,7 +19,7 @@ export function CityPicker({ city, onSelect }: { city: string; onSelect: (id: st
         className="w-64 rounded-2xl border-2 border-foreground p-1.5 shadow-[4px_4px_0_0_var(--foreground)]"
       >
         {CITIES.map((c) => {
-          const count = PLACES.filter((p) => p.city === c.id).length
+          const count = PLACES.filter((p) => p.city === c.id && p.status !== "closed").length
           return (
             <button
               key={c.id}

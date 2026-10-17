@@ -1,5 +1,6 @@
 // Moves a reviewed draft from inbox/ to data/places/ and merges its new dishes.
 // Usage: pnpm publish-place <id> [<id> ...]   or   pnpm check-inbox
+import { execFileSync } from "node:child_process"
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs"
 
 const CITIES = ["lisbon", "mumbai", "ho-chi-minh-city"]
@@ -21,7 +22,7 @@ function validate(d: Draft, dishes: Record<string, unknown>): string[] {
     if (!str(k)) errs.push(`${k} is required`)
   if (!CITIES.includes(d.city as string)) errs.push(`city must be one of ${CITIES.join(", ")}`)
   if (!VERDICTS.includes(d.verdict as string)) errs.push(`verdict must be one of ${VERDICTS.join(", ")}`)
-  if (!/^\d{4}-\d{2}$/.test(String(d.lastVisited))) errs.push("lastVisited must be YYYY-MM")
+  if (!/^\d{4}(-\d{2})?$/.test(String(d.lastVisited))) errs.push("lastVisited must be YYYY-MM or YYYY")
   if (!["active", "closed"].includes(d.status as string)) errs.push("status must be active or closed")
   if (![null, 1, 2, 3].includes(d.price as number)) errs.push("price must be null, 1, 2 or 3")
   if (!Array.isArray(d.tags)) errs.push("tags must be an array")
@@ -80,5 +81,8 @@ for (const id of ids) {
   rmSync(src)
   console.log(`✓ published ${id}`)
 }
-if (!checkOnly) write(dishesFile, Object.fromEntries(Object.entries(dishes).sort()))
+if (!checkOnly) {
+  write(dishesFile, Object.fromEntries(Object.entries(dishes).sort()))
+  execFileSync(process.execPath, ["scripts/build-data.ts"], { stdio: "inherit" })
+}
 process.exit(failed ? 1 : 0)

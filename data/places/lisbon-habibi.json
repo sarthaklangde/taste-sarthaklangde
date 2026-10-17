@@ -1,0 +1,31 @@
+{
+  "id": "lisbon-habibi",
+  "name": "Habibi",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "middle-eastern",
+  "verdict": "go-out-of-your-way",
+  "take": "Fav chicken shawarma in town. Good falafel too.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "chicken-shawarma",
+      "labels": [],
+      "myWay": null
+    },
+    {
+      "id": "falafel",
+      "labels": [],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-03",
+  "status": "active",
+  "maps": "https://share.google/rBJ4jgaEuDMSxZI3N",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}

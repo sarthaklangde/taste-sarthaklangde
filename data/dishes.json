@@ -1,9 +1,41 @@
 {
+  "camaroes-ao-diabo": {
+    "name": "Camarões ao diabo (devil's shrimp)",
+    "explainer": "Prawns cooked in a fiery sauce of chili, garlic and vinegar.",
+    "aliases": [
+      "devil's shrimp",
+      "devils shrimp",
+      "devil prawns"
+    ]
+  },
   "chicken-biryani": {
     "name": "Chicken biryani",
     "explainer": "A layered rice dish from South Asia where spiced chicken is cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
     "aliases": [
       "biryani"
+    ]
+  },
+  "chicken-burrito": {
+    "name": "Chicken burrito",
+    "explainer": "A large flour tortilla wrapped around a filling of seasoned chicken, rice and beans, usually with cheese, salsa and other toppings, and eaten as a handheld meal.",
+    "aliases": [
+      "burrito",
+      "chicken burrito"
+    ]
+  },
+  "chicken-cafreal": {
+    "name": "Chicken cafreal",
+    "explainer": "A Goan chicken dish marinated in a bright green paste of fresh coriander, green chilies, garlic and spices, then pan-fried.",
+    "aliases": [
+      "galinha cafreal",
+      "cafreal chicken"
+    ]
+  },
+  "chicken-shawarma": {
+    "name": "Chicken shawarma",
+    "explainer": "Marinated chicken stacked on a vertical spit and roasted slowly, then shaved off and served in flatbread or on a plate with pickles, garlic sauce and sometimes tahini.",
+    "aliases": [
+      "shawarma"
     ]
   },
   "chicken-tikka-masala": {
@@ -13,12 +45,61 @@
       "tikka masala"
     ]
   },
+  "falafel": {
+    "name": "Falafel",
+    "explainer": "Deep-fried balls or patties made from ground chickpeas or fava beans mixed with herbs and spices, usually served in pita or on a plate with tahini or salad.",
+    "aliases": [
+      "falafels"
+    ]
+  },
+  "jalapeno-poppers": {
+    "name": "Jalapeño poppers",
+    "explainer": "Whole jalapeño chilies split open, filled with a soft cheese mixture, then breaded or battered and fried until crisp.",
+    "aliases": [
+      "jalapeno poppers",
+      "poppers"
+    ]
+  },
+  "korean-fried-chicken": {
+    "name": "Korean fried chicken",
+    "explainer": "Chicken pieces coated in a thin, seasoned batter and fried until very crisp, often fried twice for a lighter, crackly crust, and served plain or with a sweet, spicy or garlicky glaze.",
+    "aliases": [
+      "korean chicken"
+    ]
+  },
   "mangalorean-chicken": {
     "name": "Mangalorean chicken",
     "explainer": "A chicken curry from the Mangalorean coast of Karnataka in southwest India, typically cooked in a spiced gravy with chilies, coconut and tamarind.",
     "aliases": [
       "mangalorean chicken curry",
       "mangalore chicken"
+    ]
+  },
+  "minchi": {
+    "name": "Minchi",
+    "explainer": "Macau's comfort dish: minced beef or pork stir-fried with soy sauce, onion and small cubes of fried potato, often topped with a fried egg and eaten with rice.",
+    "aliases": [
+      "minced beef"
+    ]
+  },
+  "pad-kra-pao": {
+    "name": "Pad kra pao",
+    "explainer": "A Thai stir-fry of minced meat, usually chicken, pork or beef, cooked with holy basil, garlic and chilies, and typically served over steamed rice.",
+    "aliases": [
+      "pad kra pow",
+      "pad kra pow gai",
+      "pad krapow",
+      "pat bai grapao",
+      "kra pao",
+      "basil chicken"
+    ]
+  },
+  "tom-yum-soup": {
+    "name": "Tom yum soup",
+    "explainer": "A hot and sour Thai soup flavoured with lemongrass, galangal, kaffir lime leaves and chilies, usually made with shrimp or chicken and mushrooms.",
+    "aliases": [
+      "tom yum",
+      "tom yam"
     ]
   }
 }

@@ -1,0 +1,31 @@
+{
+  "id": "lisbon-guacamole-gmg",
+  "name": "Guacamole",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "mexican",
+  "verdict": "good-if-nearby",
+  "take": "Jalapeño poppers and the chicken burrito are my go-to.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "jalapeno-poppers",
+      "labels": [],
+      "myWay": null
+    },
+    {
+      "id": "chicken-burrito",
+      "labels": [],
+      "myWay": "With the habanero sauce"
+    }
+  ],
+  "note": "I usually go to the Cais do Sodré one.",
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/XCT4jyD9cgNGpcB98",
+  "website": null,
+  "multipleLocations": true,
+  "photo": null
+}

@@ -40,11 +40,14 @@ function dishText(place: Place): string[] {
   })
 }
 
+// Closed places always sort after open ones.
+const rank = (p: Place) => VERDICTS[p.verdict].rank + (p.status === "closed" ? 10 : 0)
+
 /** Returns matching places, best first. Every term must match somewhere. */
 export function search(places: Place[], q: string): Place[] {
   const ts = terms(q)
   const sorted = [...places].sort(
-    (a, b) => VERDICTS[a.verdict].rank - VERDICTS[b.verdict].rank,
+    (a, b) => rank(a) - rank(b),
   )
   if (ts.length === 0) return sorted
 
@@ -60,7 +63,7 @@ export function search(places: Place[], q: string): Place[] {
         place.tags.join(" "),
         place.take,
         place.note ?? "",
-        place.dishes.flatMap((d) => d.labels.map((l) => l.text)).join(" "),
+        place.dishes.flatMap((d) => [...d.labels.map((l) => l.text), d.myWay ?? ""]).join(" "),
       ].join(" "),
     )
     let score = 0
@@ -79,8 +82,9 @@ export function search(places: Place[], q: string): Place[] {
   return scored
     .sort(
       (a, b) =>
+        Number(a.place.status === "closed") - Number(b.place.status === "closed") ||
         b.score - a.score ||
-        VERDICTS[a.place.verdict].rank - VERDICTS[b.place.verdict].rank,
+        rank(a.place) - rank(b.place),
     )
     .map((s) => s.place)
 }

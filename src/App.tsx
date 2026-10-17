@@ -54,7 +54,7 @@ export default function App() {
       emoji: CUISINES[id]?.emoji ?? "🍽️",
       label: CUISINES[id]?.name ?? id,
       color: CUISINES[id]?.color ?? "bg-muted",
-      count: inCity.filter((p) => p.cuisine === id).length,
+      count: inCity.filter((p) => p.cuisine === id && p.status !== "closed").length,
     }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
   const cityTiles = CITIES.map((c, i) => ({
@@ -62,7 +62,7 @@ export default function App() {
     emoji: c.flag,
     label: c.name,
     color: CITY_COLORS[i % CITY_COLORS.length],
-    count: PLACES.filter((p) => p.city === c.id).length,
+    count: PLACES.filter((p) => p.city === c.id && p.status !== "closed").length,
   })).sort((a, b) => b.count - a.count)
 
   const goCity = (id: string) => {
