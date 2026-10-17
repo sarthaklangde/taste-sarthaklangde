@@ -1,0 +1,45 @@
+{
+  "id": "lisbon-kerala",
+  "name": "Kerala",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "south-indian",
+  "verdict": "good-if-nearby",
+  "take": "Great for South Indian food.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "masala-dosa",
+      "labels": [
+        {
+          "text": "crispy",
+          "emoji": "🥞"
+        },
+        {
+          "text": "standout",
+          "emoji": "⭐"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "chicken-65",
+      "labels": [
+        {
+          "text": "standout",
+          "emoji": "🔥"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Kerala+Restaurant+Lisbon",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}

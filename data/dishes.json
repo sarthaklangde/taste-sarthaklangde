@@ -33,6 +33,14 @@
       "cheese naan bread"
     ]
   },
+  "chicken-65": {
+    "name": "Chicken 65",
+    "explainer": "Boneless chicken pieces marinated in spices, often with yogurt or ginger and garlic, then deep-fried until crisp and tossed with green chilies and curry leaves. It is a South Indian dish, popular as a spicy starter.",
+    "aliases": [
+      "chicken 65",
+      "chicken sixty five"
+    ]
+  },
   "chicken-biryani": {
     "name": "Chicken biryani",
     "explainer": "A layered rice dish from South Asia where spiced chicken is cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
@@ -211,6 +219,16 @@
     "aliases": [
       "mangalorean chicken curry",
       "mangalore chicken"
+    ]
+  },
+  "masala-dosa": {
+    "name": "Masala dosa",
+    "explainer": "A thin, crisp South Indian crepe made from a fermented rice and lentil batter, cooked on a hot griddle and folded around a spiced potato filling, usually served with coconut chutney and sambar.",
+    "aliases": [
+      "dosa",
+      "crispy dosa",
+      "crispy masala dosa",
+      "masala dosai"
     ]
   },
   "minchi": {
