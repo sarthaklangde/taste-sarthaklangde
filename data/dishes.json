@@ -63,6 +63,14 @@
       "shawarma"
     ]
   },
+  "chicken-tikka": {
+    "name": "Chicken tikka",
+    "explainer": "Boneless chicken pieces marinated in yogurt, ginger, garlic and spices, then grilled in a tandoor or over charcoal until charred at the edges and juicy inside.",
+    "aliases": [
+      "chicken tikka",
+      "murgh tikka"
+    ]
+  },
   "chicken-tikka-masala": {
     "name": "Chicken tikka masala",
     "explainer": "Pieces of chicken marinated in yogurt and spices, grilled, then served in a creamy, tomato-based sauce.",

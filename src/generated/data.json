@@ -377,6 +377,37 @@
       "photo": null
     },
     {
+      "id": "lisbon-ganesha-palace",
+      "name": "Ganesha Palace",
+      "city": "lisbon",
+      "neighborhood": null,
+      "cuisine": "indian",
+      "verdict": "good-if-nearby",
+      "take": "Excellent chicken tikka and curries.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "chicken-tikka",
+          "labels": [
+            {
+              "text": "excellent",
+              "emoji": "🤩"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": null,
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Ganesha+Palace+Lisbon",
+      "website": null,
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
       "id": "lisbon-guacamole-gmg",
       "name": "Guacamole",
       "city": "lisbon",
@@ -749,6 +780,14 @@
       "explainer": "Marinated chicken stacked on a vertical spit and roasted slowly, then shaved off and served in flatbread or on a plate with pickles, garlic sauce and sometimes tahini.",
       "aliases": [
         "shawarma"
+      ]
+    },
+    "chicken-tikka": {
+      "name": "Chicken tikka",
+      "explainer": "Boneless chicken pieces marinated in yogurt, ginger, garlic and spices, then grilled in a tandoor or over charcoal until charred at the edges and juicy inside.",
+      "aliases": [
+        "chicken tikka",
+        "murgh tikka"
       ]
     },
     "chicken-tikka-masala": {

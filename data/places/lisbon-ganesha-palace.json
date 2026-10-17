@@ -1,0 +1,31 @@
+{
+  "id": "lisbon-ganesha-palace",
+  "name": "Ganesha Palace",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "good-if-nearby",
+  "take": "Excellent chicken tikka and curries.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "chicken-tikka",
+      "labels": [
+        {
+          "text": "excellent",
+          "emoji": "🤩"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Ganesha+Palace+Lisbon",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}
