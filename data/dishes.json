@@ -17,6 +17,14 @@
       "Vietnamese milk coffee"
     ]
   },
+  "biryani": {
+    "name": "Biryani",
+    "explainer": "A layered rice dish from South Asia where spiced meat or vegetables are cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
+    "aliases": [
+      "chicken biryani",
+      "mutton biryani"
+    ]
+  },
   "camaroes-ao-diabo": {
     "name": "Camarões ao diabo (devil's shrimp)",
     "explainer": "Prawns cooked in a fiery sauce of chili, garlic and vinegar.",

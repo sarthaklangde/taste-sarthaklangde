@@ -3,6 +3,7 @@
 Sarthak's restaurant picks. Fully static Vite + React + Tailwind + shadcn site, deployed on Vercel from `main`.
 
 ## Data
+- `data/notes/<id>.md`: Sarthak's raw notes for each place, verbatim, append-only, newest last. This is the source of truth; the JSON is derived from it and can be regenerated if the schema changes. Never edit or paraphrase past entries.
 - `data/places/<id>.json`: one published place each. Shape in `src/lib/types.ts`.
 - `data/dishes.json`: shared dish explainers, keyed by dish id. One explainer per dish, reused by every place.
 - `inbox/<id>.json`: drafts waiting for Sarthak's review. Same shape plus `newDishes`.
@@ -11,10 +12,11 @@ Sarthak's restaurant picks. Fully static Vite + React + Tailwind + shadcn site, 
 
 ## Adding places
 1. Sarthak dictates raw notes, often several at once.
-2. Spawn one `enricher` subagent (Haiku) per place, in parallel. Each writes `inbox/<id>.json`.
-3. Run `pnpm check-inbox`, fix anything invalid, then show Sarthak each draft as a short card.
-4. Apply his revisions to the inbox file.
-5. When he approves: `pnpm publish-place <id>`, then commit. Push only when he says deploy.
+2. Save each note verbatim to `data/notes/<id>.md` under a `## YYYY-MM-DD` heading, as a blockquote, plus "Link resolved to: ..." if you resolved a Maps link. Later feedback about a place (corrections, "X is good too", "it closed") gets appended to the same file. Do this before enriching, even if the place is never published.
+3. Spawn one `enricher` subagent (Haiku) per place, in parallel. Each writes `inbox/<id>.json`.
+4. Run `pnpm check-inbox`, fix anything invalid, then show Sarthak each draft as a short card.
+5. Apply his revisions to the inbox file.
+6. When he approves: `pnpm publish-place <id>`, then commit. Push only when he says deploy.
 
 Never publish without his approval. Never add opinions he didn't give.
 

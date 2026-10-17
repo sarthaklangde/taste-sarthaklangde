@@ -644,6 +644,32 @@
       "photo": null
     },
     {
+      "id": "lisbon-masala-kraft",
+      "name": "Masala Kraft",
+      "city": "lisbon",
+      "neighborhood": null,
+      "cuisine": "indian",
+      "verdict": "good-if-nearby",
+      "take": "Still much better than other random Indian restaurants.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "biryani",
+          "labels": [],
+          "myWay": null
+        }
+      ],
+      "note": "Was my previous favourite biryani, but it can be inconsistent or oily.",
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://maps.app.goo.gl/vHe5Xd3P6ma1yZ8Q6",
+      "website": null,
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
       "id": "lisbon-moona-chicken",
       "name": "Moona Chicken",
       "city": "lisbon",
@@ -828,6 +854,14 @@
         "bạc xỉu",
         "iced bac xiu",
         "Vietnamese milk coffee"
+      ]
+    },
+    "biryani": {
+      "name": "Biryani",
+      "explainer": "A layered rice dish from South Asia where spiced meat or vegetables are cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
+      "aliases": [
+        "chicken biryani",
+        "mutton biryani"
       ]
     },
     "camaroes-ao-diabo": {

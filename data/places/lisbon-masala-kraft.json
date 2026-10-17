@@ -1,0 +1,26 @@
+{
+  "id": "lisbon-masala-kraft",
+  "name": "Masala Kraft",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "good-if-nearby",
+  "take": "Still much better than other random Indian restaurants.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "biryani",
+      "labels": [],
+      "myWay": null
+    }
+  ],
+  "note": "Was my previous favourite biryani, but it can be inconsistent or oily.",
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/vHe5Xd3P6ma1yZ8Q6",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}
