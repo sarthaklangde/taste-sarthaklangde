@@ -13,6 +13,7 @@ export const CITIES: { id: CityId; name: string; flag: string; aliases: string[]
 
 export const CUISINES: Record<string, { name: string; emoji: string; color: string }> = {
   indian: { name: "Indian", emoji: "🍛", color: "bg-orange-200" },
+  goan: { name: "Goan", emoji: "🥥", color: "bg-teal-200" },
   "south-indian": { name: "South Indian", emoji: "🥞", color: "bg-amber-200" },
   burger: { name: "Burgers", emoji: "🍔", color: "bg-yellow-200" },
   pizza: { name: "Pizza", emoji: "🍕", color: "bg-red-200" },
@@ -20,8 +21,10 @@ export const CUISINES: Record<string, { name: string; emoji: string; color: stri
   japanese: { name: "Japanese", emoji: "🍣", color: "bg-rose-200" },
   ramen: { name: "Ramen", emoji: "🍜", color: "bg-orange-100" },
   vietnamese: { name: "Vietnamese", emoji: "🍲", color: "bg-emerald-200" },
+  macanese: { name: "Macanese", emoji: "🥢", color: "bg-red-200" },
   chinese: { name: "Chinese", emoji: "🥟", color: "bg-red-100" },
   thai: { name: "Thai", emoji: "🌶️", color: "bg-green-200" },
+  "fried-chicken": { name: "Fried chicken", emoji: "🍗", color: "bg-orange-300" },
   korean: { name: "Korean", emoji: "🥘", color: "bg-pink-200" },
   mexican: { name: "Mexican", emoji: "🌮", color: "bg-lime-100" },
   portuguese: { name: "Portuguese", emoji: "🐟", color: "bg-sky-200" },

@@ -7,7 +7,7 @@ const VERDICTS = ["go-out-of-your-way", "good-if-nearby", "skip"]
 
 type Draft = Record<string, unknown> & {
   id: string
-  dishes: string[]
+  dishes: { id: string; labels: { text: string; emoji: string }[]; myWay: string | null }[]
   newDishes?: Record<string, { name: string; explainer: string; aliases: string[] }>
 }
 
@@ -25,8 +25,20 @@ function validate(d: Draft, dishes: Record<string, unknown>): string[] {
   if (!["active", "closed"].includes(d.status as string)) errs.push("status must be active or closed")
   if (![null, 1, 2, 3].includes(d.price as number)) errs.push("price must be null, 1, 2 or 3")
   if (!Array.isArray(d.tags)) errs.push("tags must be an array")
-  for (const id of d.dishes ?? [])
-    if (!dishes[id] && !d.newDishes?.[id]) errs.push(`dish "${id}" has no explainer`)
+  if (typeof d.multipleLocations !== "boolean") errs.push("multipleLocations must be true or false")
+  for (const k of ["note", "website", "skip", "neighborhood", "photo"])
+    if (d[k] !== null && typeof d[k] !== "string") errs.push(`${k} must be a string or null`)
+  for (const dish of d.dishes ?? []) {
+    if (typeof dish !== "object" || !dish.id) {
+      errs.push("each dish must be { id, labels, myWay }")
+      continue
+    }
+    if (!dishes[dish.id] && !d.newDishes?.[dish.id]) errs.push(`dish "${dish.id}" has no explainer`)
+    if (!Array.isArray(dish.labels) || dish.labels.some((l) => !l.text || !l.emoji))
+      errs.push(`dish "${dish.id}" labels must be [{ text, emoji }]`)
+    if (dish.myWay !== null && typeof dish.myWay !== "string")
+      errs.push(`dish "${dish.id}" myWay must be a string or null`)
+  }
   return errs
 }
 

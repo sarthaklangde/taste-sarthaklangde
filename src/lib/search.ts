@@ -34,7 +34,7 @@ export function terms(q: string): string[] {
 }
 
 function dishText(place: Place): string[] {
-  return place.dishes.map((id) => {
+  return place.dishes.map(({ id }) => {
     const d = DISHES[id]
     return norm([d?.name ?? id, ...(d?.aliases ?? [])].join(" "))
   })
@@ -59,6 +59,8 @@ export function search(places: Place[], q: string): Place[] {
         CUISINES[place.cuisine]?.name ?? "",
         place.tags.join(" "),
         place.take,
+        place.note ?? "",
+        place.dishes.flatMap((d) => d.labels.map((l) => l.text)).join(" "),
       ].join(" "),
     )
     let score = 0
