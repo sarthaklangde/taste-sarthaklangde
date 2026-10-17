@@ -14,7 +14,7 @@ Sarthak's restaurant picks. Fully static Vite + React + Tailwind + shadcn site, 
 2. Spawn one `enricher` subagent (Haiku) per place, in parallel. Each writes `inbox/<id>.json`.
 3. Run `pnpm check-inbox`, fix anything invalid, then show Sarthak each draft as a short card.
 4. Apply his revisions to the inbox file.
-5. When he approves: `pnpm publish-place <id>`, then commit and push to `main`.
+5. When he approves: `pnpm publish-place <id>`, then commit. Push only when he says deploy.
 
 Never publish without his approval. Never add opinions he didn't give.
 
@@ -25,4 +25,6 @@ Filters are query params so any view is shareable: `?city=lisbon&cuisine=indian&
 - `api/og.ts` draws the 1200x630 preview image. Pinned to `@vercel/og@0.9.0` because 1.0.3 ships without a wasm file it needs.
 
 ## Git
-Commit and push straight to `main`. No branches or PRs for this repo (Sarthak's call, overrides the workspace rule).
+- Work on `main`. No branches or PRs (Sarthak's call, overrides the workspace rule).
+- Batch changes: commit locally as you go, but do not push. Pushing to `main` deploys to production.
+- When a batch is ready, list the unpushed commits (`git log origin/main..main --oneline`) and ask Sarthak to deploy. Push only after he says yes.
