@@ -589,6 +589,49 @@
       "photo": null
     },
     {
+      "id": "lisbon-izakaya-lisboa",
+      "name": "Izakaya Lisboa",
+      "city": "lisbon",
+      "neighborhood": null,
+      "cuisine": "japanese",
+      "verdict": "good-if-nearby",
+      "take": "Dope AF ambience, feels authentic. Great for date night.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "fried-chicken-thighs",
+          "labels": [
+            {
+              "text": "very good",
+              "emoji": "🙌"
+            }
+          ],
+          "myWay": null
+        },
+        {
+          "id": "scallops",
+          "labels": [
+            {
+              "text": "good too",
+              "emoji": "👍"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": "Heard great things about the sushi. Didn't try it.",
+      "tags": [
+        "date night"
+      ],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://maps.app.goo.gl/KFjckUEN7gSKAFVH7",
+      "website": "https://izakayaportugal.pt/izakaya-lisboa",
+      "multipleLocations": true,
+      "photo": null
+    },
+    {
       "id": "lisbon-kerala",
       "name": "Kerala",
       "city": "lisbon",
@@ -1005,6 +1048,14 @@
         "frango desossado"
       ]
     },
+    "fried-chicken-thighs": {
+      "name": "Fried chicken thighs",
+      "explainer": "Boneless or bone-in chicken thigh pieces coated in seasoned flour or batter and deep-fried until the outside is crisp and the meat inside stays juicy.",
+      "aliases": [
+        "chicken thighs",
+        "karaage"
+      ]
+    },
     "full-english-breakfast": {
       "name": "Full English breakfast",
       "explainer": "A cooked breakfast from England and the UK of eggs, bacon or sausage, baked beans, grilled tomato and mushrooms, usually served with toast.",
@@ -1139,6 +1190,10 @@
         "kra pao",
         "basil chicken"
       ]
+    },
+    "scallops": {
+      "name": "Scallops",
+      "explainer": "The meat of a sea scallop, a shellfish with a sweet, tender flesh that is usually seared or grilled quickly so the outside browns and the centre stays soft."
     },
     "street-burger": {
       "name": "Street Burger",

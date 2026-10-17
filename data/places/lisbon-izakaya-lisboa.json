@@ -1,0 +1,43 @@
+{
+  "id": "lisbon-izakaya-lisboa",
+  "name": "Izakaya Lisboa",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "japanese",
+  "verdict": "good-if-nearby",
+  "take": "Dope AF ambience, feels authentic. Great for date night.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "fried-chicken-thighs",
+      "labels": [
+        {
+          "text": "very good",
+          "emoji": "🙌"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "scallops",
+      "labels": [
+        {
+          "text": "good too",
+          "emoji": "👍"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": "Heard great things about the sushi. Didn't try it.",
+  "tags": [
+    "date night"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/KFjckUEN7gSKAFVH7",
+  "website": "https://izakayaportugal.pt/izakaya-lisboa",
+  "multipleLocations": true,
+  "photo": null
+}

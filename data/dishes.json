@@ -166,6 +166,14 @@
       "frango desossado"
     ]
   },
+  "fried-chicken-thighs": {
+    "name": "Fried chicken thighs",
+    "explainer": "Boneless or bone-in chicken thigh pieces coated in seasoned flour or batter and deep-fried until the outside is crisp and the meat inside stays juicy.",
+    "aliases": [
+      "chicken thighs",
+      "karaage"
+    ]
+  },
   "full-english-breakfast": {
     "name": "Full English breakfast",
     "explainer": "A cooked breakfast from England and the UK of eggs, bacon or sausage, baked beans, grilled tomato and mushrooms, usually served with toast.",
@@ -300,6 +308,10 @@
       "kra pao",
       "basil chicken"
     ]
+  },
+  "scallops": {
+    "name": "Scallops",
+    "explainer": "The meat of a sea scallop, a shellfish with a sweet, tender flesh that is usually seared or grilled quickly so the outside browns and the centre stays soft."
   },
   "street-burger": {
     "name": "Street Burger",
