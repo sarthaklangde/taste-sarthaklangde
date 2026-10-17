@@ -1,0 +1,31 @@
+{
+  "id": "ho-chi-minh-city-pizza-bia",
+  "name": "Pizza & Bia",
+  "city": "ho-chi-minh-city",
+  "neighborhood": null,
+  "cuisine": "pizza",
+  "verdict": "good-if-nearby",
+  "take": "Great thin crispy pizzas.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "thin-crust-pizza",
+      "labels": [
+        {
+          "text": "thin & crispy",
+          "emoji": "🍕"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Pizza+%26+Bia+Ho+Chi+Minh+City",
+  "website": "https://pizzaandbia.com/",
+  "multipleLocations": false,
+  "photo": null
+}

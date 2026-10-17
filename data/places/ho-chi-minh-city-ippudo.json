@@ -1,0 +1,41 @@
+{
+  "id": "ho-chi-minh-city-ippudo",
+  "name": "Ippudo",
+  "city": "ho-chi-minh-city",
+  "neighborhood": null,
+  "cuisine": "ramen",
+  "verdict": "go-out-of-your-way",
+  "take": "Karaka special is the best spicy ramen.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "karaka-special",
+      "labels": [
+        {
+          "text": "best spicy ramen",
+          "emoji": "🌶️"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "deep-fried-chicken-tartar",
+      "labels": [
+        {
+          "text": "amazing",
+          "emoji": "🤩"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": "I go to the Lê Thánh Tôn branch.",
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Ippudo+Le+Thanh+Ton+Ho+Chi+Minh+City",
+  "website": null,
+  "multipleLocations": true,
+  "photo": null
+}

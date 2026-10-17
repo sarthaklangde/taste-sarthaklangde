@@ -1,0 +1,31 @@
+{
+  "id": "ho-chi-minh-city-wknd",
+  "name": "Wknd",
+  "city": "ho-chi-minh-city",
+  "neighborhood": null,
+  "cuisine": "breakfast",
+  "verdict": "go-out-of-your-way",
+  "take": "Best English breakfast.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "full-english-breakfast",
+      "labels": [
+        {
+          "text": "best",
+          "emoji": "🏆"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Wknd+Ho+Chi+Minh+City",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}

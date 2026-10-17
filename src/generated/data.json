@@ -1,6 +1,181 @@
 {
   "places": [
     {
+      "id": "ho-chi-minh-city-banh-mi-362",
+      "name": "Bánh Mì 362",
+      "city": "ho-chi-minh-city",
+      "neighborhood": null,
+      "cuisine": "vietnamese",
+      "verdict": "go-out-of-your-way",
+      "take": "Go for the iced bạc xỉu, not the bánh mì.",
+      "skip": "The bánh mì itself. Not that good.",
+      "dishes": [
+        {
+          "id": "bac-xiu",
+          "labels": [
+            {
+              "text": "best",
+              "emoji": "🏆"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": "Had it almost every day.",
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Banh+Mi+362+Ho+Chi+Minh+City",
+      "website": "https://www.banhmi362.com",
+      "multipleLocations": true,
+      "photo": null
+    },
+    {
+      "id": "ho-chi-minh-city-dalcheeni",
+      "name": "Dalcheeni",
+      "city": "ho-chi-minh-city",
+      "neighborhood": null,
+      "cuisine": "indian",
+      "verdict": "good-if-nearby",
+      "take": "Fantastic biryanis, chicken and mutton.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "chicken-biryani",
+          "labels": [
+            {
+              "text": "fantastic",
+              "emoji": "🤩"
+            }
+          ],
+          "myWay": null
+        },
+        {
+          "id": "mutton-biryani",
+          "labels": [
+            {
+              "text": "fantastic",
+              "emoji": "🤩"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": null,
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Dalcheeni+Ho+Chi+Minh+City",
+      "website": "https://dalcheenivn.com/",
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
+      "id": "ho-chi-minh-city-ippudo",
+      "name": "Ippudo",
+      "city": "ho-chi-minh-city",
+      "neighborhood": null,
+      "cuisine": "ramen",
+      "verdict": "go-out-of-your-way",
+      "take": "Karaka special is the best spicy ramen.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "karaka-special",
+          "labels": [
+            {
+              "text": "best spicy ramen",
+              "emoji": "🌶️"
+            }
+          ],
+          "myWay": null
+        },
+        {
+          "id": "deep-fried-chicken-tartar",
+          "labels": [
+            {
+              "text": "amazing",
+              "emoji": "🤩"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": "I go to the Lê Thánh Tôn branch.",
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Ippudo+Le+Thanh+Ton+Ho+Chi+Minh+City",
+      "website": null,
+      "multipleLocations": true,
+      "photo": null
+    },
+    {
+      "id": "ho-chi-minh-city-pizza-bia",
+      "name": "Pizza & Bia",
+      "city": "ho-chi-minh-city",
+      "neighborhood": null,
+      "cuisine": "pizza",
+      "verdict": "good-if-nearby",
+      "take": "Great thin crispy pizzas.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "thin-crust-pizza",
+          "labels": [
+            {
+              "text": "thin & crispy",
+              "emoji": "🍕"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": null,
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pizza+%26+Bia+Ho+Chi+Minh+City",
+      "website": "https://pizzaandbia.com/",
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
+      "id": "ho-chi-minh-city-wknd",
+      "name": "Wknd",
+      "city": "ho-chi-minh-city",
+      "neighborhood": null,
+      "cuisine": "breakfast",
+      "verdict": "go-out-of-your-way",
+      "take": "Best English breakfast.",
+      "skip": null,
+      "dishes": [
+        {
+          "id": "full-english-breakfast",
+          "labels": [
+            {
+              "text": "best",
+              "emoji": "🏆"
+            }
+          ],
+          "myWay": null
+        }
+      ],
+      "note": null,
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Wknd+Ho+Chi+Minh+City",
+      "website": null,
+      "multipleLocations": false,
+      "photo": null
+    },
+    {
       "id": "lisbon-a-valenciana",
       "name": "A Valenciana",
       "city": "lisbon",
@@ -520,6 +695,16 @@
         "crispy potato chaat"
       ]
     },
+    "bac-xiu": {
+      "name": "Bạc xỉu (iced Vietnamese milk coffee)",
+      "explainer": "A Vietnamese coffee made mostly of milk with a small amount of strong dark-roast coffee and sweetened condensed milk, usually served iced and stirred before drinking. Bạc means pale or silver in Vietnamese, which refers to how light the drink looks.",
+      "aliases": [
+        "bac xiu",
+        "bạc xỉu",
+        "iced bac xiu",
+        "Vietnamese milk coffee"
+      ]
+    },
     "camaroes-ao-diabo": {
       "name": "Camarões ao diabo (devil's shrimp)",
       "explainer": "Prawns cooked in a fiery sauce of chili, garlic and vinegar.",
@@ -590,6 +775,16 @@
         "french fries"
       ]
     },
+    "deep-fried-chicken-tartar": {
+      "name": "Deep-fried chicken with tartar sauce",
+      "explainer": "Japanese-style chicken pieces coated and deep-fried until crisp, then dipped in a sweet and sour nanban sauce and topped with tartar sauce, a mayonnaise-based sauce with pickles and herbs.",
+      "aliases": [
+        "chicken nanban",
+        "nanban chicken",
+        "tartar chicken",
+        "chicken with tartar sauce"
+      ]
+    },
     "desi-grilled-chicken": {
       "name": "Desi grilled chicken",
       "explainer": "Chicken pieces marinated in yogurt and South Asian spices, then grilled over charcoal or fire until charred at the edges and juicy inside.",
@@ -625,6 +820,15 @@
         "frango desossado"
       ]
     },
+    "full-english-breakfast": {
+      "name": "Full English breakfast",
+      "explainer": "A cooked breakfast from England and the UK of eggs, bacon or sausage, baked beans, grilled tomato and mushrooms, usually served with toast.",
+      "aliases": [
+        "english breakfast",
+        "full english",
+        "fry-up"
+      ]
+    },
     "grilled-chicken-plate": {
       "name": "Grilled chicken plate",
       "explainer": "Grilled chicken served with rice and fried potatoes, a common plate in Portuguese grill houses. Piri piri, a hot sauce made from African bird's-eye chilies with olive oil, garlic and lemon, is the usual condiment.",
@@ -642,6 +846,15 @@
       "aliases": [
         "jalapeno poppers",
         "poppers"
+      ]
+    },
+    "karaka-special": {
+      "name": "Karaka special",
+      "explainer": "A spicy ramen bowl: Japanese wheat noodles in a broth heated with chili, usually finished with chili oil and topped with spiced minced pork or other savoury toppings.",
+      "aliases": [
+        "karaka",
+        "karaka ramen",
+        "spicy karaka ramen"
       ]
     },
     "korean-fried-chicken": {
@@ -695,6 +908,14 @@
         "broccoli malai"
       ]
     },
+    "mutton-biryani": {
+      "name": "Mutton biryani",
+      "explainer": "A layered rice dish from South Asia where spiced mutton, usually goat or lamb, is cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
+      "aliases": [
+        "lamb biryani",
+        "goat biryani"
+      ]
+    },
     "old-delhi-butter-chicken": {
       "name": "Old Delhi butter chicken",
       "explainer": "Butter chicken, also called murgh makhani, is chicken cooked in a rich, creamy tomato and butter sauce spiced with garam masala, a dish most closely associated with North Indian and Delhi cooking.",
@@ -721,6 +942,15 @@
       "aliases": [
         "smash burger",
         "smash burgers"
+      ]
+    },
+    "thin-crust-pizza": {
+      "name": "Thin crust pizza",
+      "explainer": "A pizza with a thin, crisp base that bakes until the edges are crackly, with the sauce, cheese and toppings sitting on top rather than in a thick, bready crust.",
+      "aliases": [
+        "thin crust pizza",
+        "thin pizza",
+        "thin-crust pizza"
       ]
     },
     "tofu-fried-rice": {

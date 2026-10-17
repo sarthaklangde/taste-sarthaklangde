@@ -1,0 +1,31 @@
+{
+  "id": "ho-chi-minh-city-banh-mi-362",
+  "name": "Bánh Mì 362",
+  "city": "ho-chi-minh-city",
+  "neighborhood": null,
+  "cuisine": "vietnamese",
+  "verdict": "go-out-of-your-way",
+  "take": "Go for the iced bạc xỉu, not the bánh mì.",
+  "skip": "The bánh mì itself. Not that good.",
+  "dishes": [
+    {
+      "id": "bac-xiu",
+      "labels": [
+        {
+          "text": "best",
+          "emoji": "🏆"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": "Had it almost every day.",
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Banh+Mi+362+Ho+Chi+Minh+City",
+  "website": "https://www.banhmi362.com",
+  "multipleLocations": true,
+  "photo": null
+}

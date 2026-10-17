@@ -32,6 +32,7 @@ export const CUISINES: Record<string, { name: string; emoji: string; color: stri
   seafood: { name: "Seafood", emoji: "🦐", color: "bg-cyan-200" },
   "middle-eastern": { name: "Middle Eastern", emoji: "🧆", color: "bg-yellow-100" },
   "street-food": { name: "Street food", emoji: "🥙", color: "bg-fuchsia-200" },
+  breakfast: { name: "Breakfast", emoji: "🍳", color: "bg-yellow-200" },
   cafe: { name: "Coffee", emoji: "☕", color: "bg-stone-300" },
   bakery: { name: "Bakery", emoji: "🥐", color: "bg-amber-100" },
   dessert: { name: "Dessert", emoji: "🍨", color: "bg-pink-100" },

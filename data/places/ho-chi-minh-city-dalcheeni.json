@@ -1,0 +1,41 @@
+{
+  "id": "ho-chi-minh-city-dalcheeni",
+  "name": "Dalcheeni",
+  "city": "ho-chi-minh-city",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "good-if-nearby",
+  "take": "Fantastic biryanis, chicken and mutton.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "chicken-biryani",
+      "labels": [
+        {
+          "text": "fantastic",
+          "emoji": "🤩"
+        }
+      ],
+      "myWay": null
+    },
+    {
+      "id": "mutton-biryani",
+      "labels": [
+        {
+          "text": "fantastic",
+          "emoji": "🤩"
+        }
+      ],
+      "myWay": null
+    }
+  ],
+  "note": null,
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Dalcheeni+Ho+Chi+Minh+City",
+  "website": "https://dalcheenivn.com/",
+  "multipleLocations": false,
+  "photo": null
+}
