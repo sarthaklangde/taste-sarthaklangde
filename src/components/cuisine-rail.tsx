@@ -11,9 +11,10 @@ type Props = {
 export function CuisineRail({ cuisines, active, onSelect }: Props) {
   if (cuisines.length === 0) return null
   return (
-    <div className="-mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-2 [scrollbar-width:none]">
+    // Vertical padding keeps the active ring and bounce from being clipped by the scroller.
+    <div className="-mx-4 flex snap-x gap-4 overflow-x-auto px-4 pt-3 pb-3 [scrollbar-width:none]">
       {cuisines.map((id) => {
-        const c = CUISINES[id] ?? { name: id, emoji: "🍽️" }
+        const c = CUISINES[id] ?? { name: id, emoji: "🍽️", color: "bg-muted" }
         const on = active === id
         return (
           <button
@@ -25,18 +26,14 @@ export function CuisineRail({ cuisines, active, onSelect }: Props) {
           >
             <span
               className={cn(
-                "flex size-16 items-center justify-center rounded-full bg-muted text-3xl transition-all group-active:scale-95",
-                on && "bg-foreground ring-2 ring-foreground ring-offset-2",
+                "flex size-16 items-center justify-center rounded-full border-2 border-transparent text-3xl transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:rotate-6 group-active:scale-90",
+                c.color,
+                on && "-translate-y-1 -rotate-6 border-foreground shadow-[3px_3px_0_0_var(--foreground)]",
               )}
             >
               {c.emoji}
             </span>
-            <span
-              className={cn(
-                "text-xs text-muted-foreground",
-                on && "font-semibold text-foreground",
-              )}
-            >
+            <span className={cn("text-xs font-medium", on ? "font-bold" : "text-muted-foreground")}>
               {c.name}
             </span>
           </button>

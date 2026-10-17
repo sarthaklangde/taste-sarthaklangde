@@ -1,50 +1,53 @@
 import type { CityId, Verdict } from "./types"
 
-export const CITIES: { id: CityId; name: string; aliases: string[] }[] = [
-  { id: "lisbon", name: "Lisbon", aliases: ["lisbon", "lisboa"] },
-  { id: "mumbai", name: "Mumbai", aliases: ["mumbai", "bombay"] },
+export const CITIES: { id: CityId; name: string; flag: string; aliases: string[] }[] = [
+  { id: "lisbon", name: "Lisbon", flag: "🇵🇹", aliases: ["lisbon", "lisboa"] },
+  { id: "mumbai", name: "Mumbai", flag: "🇮🇳", aliases: ["mumbai", "bombay"] },
   {
     id: "ho-chi-minh-city",
     name: "Ho Chi Minh City",
+    flag: "🇻🇳",
     aliases: ["ho chi minh", "hcmc", "saigon", "hcm"],
   },
 ]
 
-export const CUISINES: Record<string, { name: string; emoji: string }> = {
-  indian: { name: "Indian", emoji: "🍛" },
-  "south-indian": { name: "South Indian", emoji: "🥞" },
-  burger: { name: "Burgers", emoji: "🍔" },
-  pizza: { name: "Pizza", emoji: "🍕" },
-  italian: { name: "Italian", emoji: "🍝" },
-  japanese: { name: "Japanese", emoji: "🍣" },
-  ramen: { name: "Ramen", emoji: "🍜" },
-  vietnamese: { name: "Vietnamese", emoji: "🍲" },
-  chinese: { name: "Chinese", emoji: "🥟" },
-  thai: { name: "Thai", emoji: "🌶️" },
-  korean: { name: "Korean", emoji: "🥘" },
-  mexican: { name: "Mexican", emoji: "🌮" },
-  portuguese: { name: "Portuguese", emoji: "🐟" },
-  seafood: { name: "Seafood", emoji: "🦐" },
-  "middle-eastern": { name: "Middle Eastern", emoji: "🧆" },
-  "street-food": { name: "Street food", emoji: "🥙" },
-  cafe: { name: "Coffee", emoji: "☕" },
-  bakery: { name: "Bakery", emoji: "🥐" },
-  dessert: { name: "Dessert", emoji: "🍨" },
-  bar: { name: "Drinks", emoji: "🍸" },
+export const CUISINES: Record<string, { name: string; emoji: string; color: string }> = {
+  indian: { name: "Indian", emoji: "🍛", color: "bg-orange-200" },
+  "south-indian": { name: "South Indian", emoji: "🥞", color: "bg-amber-200" },
+  burger: { name: "Burgers", emoji: "🍔", color: "bg-yellow-200" },
+  pizza: { name: "Pizza", emoji: "🍕", color: "bg-red-200" },
+  italian: { name: "Italian", emoji: "🍝", color: "bg-lime-200" },
+  japanese: { name: "Japanese", emoji: "🍣", color: "bg-rose-200" },
+  ramen: { name: "Ramen", emoji: "🍜", color: "bg-orange-100" },
+  vietnamese: { name: "Vietnamese", emoji: "🍲", color: "bg-emerald-200" },
+  chinese: { name: "Chinese", emoji: "🥟", color: "bg-red-100" },
+  thai: { name: "Thai", emoji: "🌶️", color: "bg-green-200" },
+  korean: { name: "Korean", emoji: "🥘", color: "bg-pink-200" },
+  mexican: { name: "Mexican", emoji: "🌮", color: "bg-lime-100" },
+  portuguese: { name: "Portuguese", emoji: "🐟", color: "bg-sky-200" },
+  seafood: { name: "Seafood", emoji: "🦐", color: "bg-cyan-200" },
+  "middle-eastern": { name: "Middle Eastern", emoji: "🧆", color: "bg-yellow-100" },
+  "street-food": { name: "Street food", emoji: "🥙", color: "bg-fuchsia-200" },
+  cafe: { name: "Coffee", emoji: "☕", color: "bg-stone-300" },
+  bakery: { name: "Bakery", emoji: "🥐", color: "bg-amber-100" },
+  dessert: { name: "Dessert", emoji: "🍨", color: "bg-pink-100" },
+  bar: { name: "Drinks", emoji: "🍸", color: "bg-violet-200" },
 }
 
-export const VERDICTS: Record<Verdict, { label: string; rank: number; className: string }> = {
+export const VERDICTS: Record<Verdict, { label: string; emoji: string; rank: number; className: string }> = {
   "go-out-of-your-way": {
     label: "Go out of your way",
+    emoji: "🔥",
     rank: 0,
-    className: "bg-emerald-100 text-emerald-900",
+    className: "bg-lime-300",
   },
   "good-if-nearby": {
     label: "Good if nearby",
+    emoji: "👍",
     rank: 1,
-    className: "bg-amber-100 text-amber-900",
+    className: "bg-sky-200",
   },
-  skip: { label: "Skip", rank: 2, className: "bg-rose-100 text-rose-900" },
+  skip: { label: "Skip it", emoji: "🙅", rank: 2, className: "bg-rose-200" },
 }
 
 /** Places not visited for this many months show a "might have changed" note. */

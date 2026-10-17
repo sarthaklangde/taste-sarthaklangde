@@ -13,9 +13,12 @@ Sarthak's restaurant picks. Fully static Vite + React + Tailwind + shadcn site, 
 2. Spawn one `enricher` subagent (Haiku) per place, in parallel. Each writes `inbox/<id>.json`.
 3. Run `pnpm check-inbox`, fix anything invalid, then show Sarthak each draft as a short card.
 4. Apply his revisions to the inbox file.
-5. When he approves: `pnpm publish-place <id>`, then branch, commit and open a PR.
+5. When he approves: `pnpm publish-place <id>`, then commit and push to `main`.
 
 Never publish without his approval. Never add opinions he didn't give.
 
 ## URL
 Filters are query params so any view is shareable: `?city=lisbon&cuisine=indian&q=tikka+masala`.
+
+## Git
+Commit and push straight to `main`. No branches or PRs for this repo (Sarthak's call, overrides the workspace rule).
