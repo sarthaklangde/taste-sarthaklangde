@@ -1,0 +1,21 @@
+{
+  "id": "lisbon-costa-do-malabar",
+  "name": "Costa do Malabar",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "go-out-of-your-way",
+  "take": "Billed as South Indian, but come for the biryani.",
+  "skip": "The rest of the South Indian menu. Mediocre.",
+  "dishes": [
+    "chicken-biryani",
+    "mangalorean-chicken",
+    "chicken-tikka-masala"
+  ],
+  "tags": [],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Costa+do+Malabar+Lisbon",
+  "photo": null
+}
