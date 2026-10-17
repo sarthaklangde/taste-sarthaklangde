@@ -69,6 +69,8 @@ export const TAG_EMOJI: Record<string, string> = {
   healthy: "🥗",
   delivery: "🛵",
   "delivery only": "🛵",
+  "comfort food": "🫶",
+  "sick day": "🤒",
 }
 
 export const tagEmoji = (tag: string) =>

@@ -71,6 +71,16 @@
       "shawarma"
     ]
   },
+  "chicken-soup": {
+    "name": "Desi chicken soup",
+    "explainer": "A light, brothy chicken soup from South Asia, often made with ginger, garlic, black pepper and whole spices, sometimes with a little lemon or fresh coriander on top. In Hindi and Urdu it is called shorba or yakhni.",
+    "aliases": [
+      "desi chicken soup",
+      "chicken shorba",
+      "murgh shorba",
+      "yakhni"
+    ]
+  },
   "chicken-tikka": {
     "name": "Chicken tikka",
     "explainer": "Boneless chicken pieces marinated in yogurt, ginger, garlic and spices, then grilled in a tandoor or over charcoal until charred at the edges and juicy inside.",

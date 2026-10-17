@@ -1,0 +1,39 @@
+{
+  "id": "lisbon-delhi-darbar",
+  "name": "Delhi Darbar",
+  "city": "lisbon",
+  "neighborhood": null,
+  "cuisine": "indian",
+  "verdict": "good-if-nearby",
+  "take": "My go-to when I'm sick or need comfort.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "chicken-soup",
+      "labels": [
+        {
+          "text": "comforting",
+          "emoji": "🫶"
+        },
+        {
+          "text": "one of a kind",
+          "emoji": "🦄"
+        }
+      ],
+      "myWay": "Listed as Chicken soup on the menu."
+    }
+  ],
+  "note": "I haven't found any other restaurant making it in this style. The other food is not bad.",
+  "tags": [
+    "comfort food",
+    "sick day",
+    "delivery"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/rRFnuTjj4Kv9zVQS9",
+  "website": null,
+  "multipleLocations": false,
+  "photo": null
+}
