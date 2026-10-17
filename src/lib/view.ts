@@ -58,7 +58,8 @@ export function resolveView(params: ViewParams): View {
 
   const sp = new URLSearchParams({ city: city.id })
   if (cuisine) sp.set("cuisine", cuisine)
-  if (query) sp.set("q", query)
+  const cleanQuery = terms(query).join(" ")
+  if (cleanQuery) sp.set("q", cleanQuery)
 
   return {
     city,
