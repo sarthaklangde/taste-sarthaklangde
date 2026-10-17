@@ -28,3 +28,6 @@ Filters are query params so any view is shareable: `?city=lisbon&cuisine=indian&
 - Work on `main`. No branches or PRs (Sarthak's call, overrides the workspace rule).
 - Batch changes: commit locally as you go, but do not push. Pushing to `main` deploys to production.
 - When a batch is ready, list the unpushed commits (`git log origin/main..main --oneline`) and ask Sarthak to deploy. Push only after he says yes.
+
+## Design
+Sarthak likes the current look; keep it. Playful sticker style: cream background, Bricolage Grotesque headings, thick black borders with offset shadows, bright pastel fills, emoji, small tilts and bouncy hovers. Layout borrows from Lu.ma: city picker, one row of cuisine pills under it, compact place rows that expand, city grid at the bottom.

@@ -1,6 +1,7 @@
 import { Search, X } from "lucide-react"
 import { useEffect, useMemo, useState } from "react"
 import { CityPicker } from "@/components/city-picker"
+import { CuisineRow } from "@/components/cuisine-row"
 import { PlaceCard } from "@/components/place-card"
 import { ShareButton } from "@/components/share-button"
 import { TileGrid } from "@/components/tile-grid"
@@ -56,6 +57,7 @@ export default function App() {
       color: CUISINES[id]?.color ?? "bg-muted",
       count: inCity.filter((p) => p.cuisine === id && p.status !== "closed").length,
     }))
+    .filter((t) => t.count > 0)
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
   const cityTiles = CITIES.map((c, i) => ({
     id: c.id,
@@ -88,8 +90,16 @@ export default function App() {
         </p>
       </header>
 
-      <div className="mb-4 flex items-center gap-2 text-muted-foreground">
+      <div className="flex items-center gap-2 text-muted-foreground">
         Eating in <CityPicker city={city.id} onSelect={goCity} />
+      </div>
+
+      <div className="mt-2 mb-3">
+        <CuisineRow
+          tiles={cuisineTiles}
+          active={view.cuisine}
+          onSelect={(cuisine) => update({ cuisine, q: "" })}
+        />
       </div>
 
       <div className="relative">
@@ -175,20 +185,6 @@ export default function App() {
           </div>
         )}
       </section>
-
-      {cuisineTiles.length > 0 && (
-        <section className="mt-12">
-          <SectionTitle title="Browse by cuisine" sub={`in ${city.name}`} />
-          <TileGrid
-            tiles={cuisineTiles}
-            active={view.cuisine}
-            onSelect={(id) => {
-              update({ cuisine: view.cuisine === id ? null : id, q: "" })
-              window.scrollTo({ top: 0, behavior: "smooth" })
-            }}
-          />
-        </section>
-      )}
 
       <section className="mt-12">
         <SectionTitle title="Explore cities" />
