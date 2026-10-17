@@ -27,7 +27,7 @@ export function cityInQuery(q: string): { city: CityId | null; rest: string } {
   return { city: null, rest }
 }
 
-function terms(q: string): string[] {
+export function terms(q: string): string[] {
   return norm(q)
     .split(/[^a-z0-9]+/)
     .filter((t) => t && !STOPWORDS.has(t))

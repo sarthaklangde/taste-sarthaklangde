@@ -1,15 +1,10 @@
-import dishesJson from "../../data/dishes.json"
+import data from "../generated/data.json"
 import { STALE_AFTER_MONTHS } from "./catalog"
 import type { Dish, Place } from "./types"
 
-const files = import.meta.glob<Place>("../../data/places/*.json", {
-  eager: true,
-  import: "default",
-})
+export const DISHES = data.dishes as Record<string, Dish>
 
-export const DISHES = dishesJson as Record<string, Dish>
-
-export const PLACES: Place[] = Object.values(files).filter(
+export const PLACES: Place[] = (data.places as Place[]).filter(
   (p) => p.status !== "closed",
 )
 

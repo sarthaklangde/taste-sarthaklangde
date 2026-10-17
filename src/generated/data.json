@@ -1,0 +1,49 @@
+{
+  "places": [
+    {
+      "id": "lisbon-costa-do-malabar",
+      "name": "Costa do Malabar",
+      "city": "lisbon",
+      "neighborhood": null,
+      "cuisine": "indian",
+      "verdict": "go-out-of-your-way",
+      "take": "Billed as South Indian, but come for the biryani.",
+      "skip": "The rest of the South Indian menu. Mediocre.",
+      "dishes": [
+        "chicken-biryani",
+        "mangalorean-chicken",
+        "chicken-tikka-masala"
+      ],
+      "tags": [],
+      "price": null,
+      "lastVisited": "2026-10",
+      "status": "active",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Costa+do+Malabar+Lisbon",
+      "photo": null
+    }
+  ],
+  "dishes": {
+    "chicken-biryani": {
+      "name": "Chicken biryani",
+      "explainer": "A layered rice dish from South Asia where spiced chicken is cooked together with long-grain basmati rice, usually with saffron, fried onions and fresh herbs.",
+      "aliases": [
+        "biryani"
+      ]
+    },
+    "chicken-tikka-masala": {
+      "name": "Chicken tikka masala",
+      "explainer": "Pieces of chicken marinated in yogurt and spices, grilled, then served in a creamy, tomato-based sauce.",
+      "aliases": [
+        "tikka masala"
+      ]
+    },
+    "mangalorean-chicken": {
+      "name": "Mangalorean chicken",
+      "explainer": "A chicken curry from the Mangalorean coast of Karnataka in southwest India, typically cooked in a spiced gravy with chilies, coconut and tamarind.",
+      "aliases": [
+        "mangalorean chicken curry",
+        "mangalore chicken"
+      ]
+    }
+  }
+}

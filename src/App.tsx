@@ -1,39 +1,22 @@
 import { Search, X } from "lucide-react"
-import { useMemo } from "react"
+import { useEffect, useMemo } from "react"
 import { CuisineRail } from "@/components/cuisine-rail"
 import { PlaceCard } from "@/components/place-card"
 import { ShareButton } from "@/components/share-button"
-import { CITIES, CUISINES } from "@/lib/catalog"
-import { PLACES } from "@/lib/data"
-import { cityInQuery, search } from "@/lib/search"
+import { CITIES } from "@/lib/catalog"
 import { useUrlState } from "@/lib/url-state"
+import { resolveView } from "@/lib/view"
 import { cn } from "@/lib/utils"
 
 export default function App() {
   const [state, update] = useUrlState()
+  const view = useMemo(() => resolveView(state), [state])
+  const { city, cuisines, inCity, results } = view
+  const cityName = city.name
 
-  // "burger in lisbon" switches the city and searches for "burger".
-  const fromQuery = cityInQuery(state.q)
-  const city =
-    fromQuery.city ?? CITIES.find((c) => c.id === state.city)?.id ?? CITIES[0].id
-  const cityName = CITIES.find((c) => c.id === city)!.name
-
-  const inCity = useMemo(() => PLACES.filter((p) => p.city === city), [city])
-  const cuisines = useMemo(() => [...new Set(inCity.map((p) => p.cuisine))].sort(), [inCity])
-  const results = useMemo(() => {
-    const pool = state.cuisine ? inCity.filter((p) => p.cuisine === state.cuisine) : inCity
-    return search(pool, fromQuery.rest)
-  }, [inCity, state.cuisine, fromQuery.rest])
-
-  const filtered = Boolean(state.city || state.cuisine || state.q.trim())
-  const shareUrl = useMemo(() => {
-    const p = new URLSearchParams({ city })
-    if (state.cuisine) p.set("cuisine", state.cuisine)
-    if (fromQuery.rest.trim()) p.set("q", fromQuery.rest.trim())
-    return `${window.location.origin}/?${p}`
-  }, [city, state.cuisine, fromQuery.rest])
-  const what = fromQuery.rest.trim() || CUISINES[state.cuisine ?? ""]?.name || "food"
-  const shareTitle = `Sarthak's ${what.toLowerCase()} picks in ${cityName}`
+  useEffect(() => {
+    document.title = view.title
+  }, [view.title])
 
   return (
     <div className="mx-auto min-h-svh max-w-2xl px-4 pt-10 pb-16">
@@ -49,7 +32,7 @@ export default function App() {
 
       <nav className="-mx-4 mb-5 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none]">
         {CITIES.map((c) => {
-          const on = c.id === city
+          const on = c.id === city.id
           return (
             <button
               key={c.id}
@@ -91,23 +74,27 @@ export default function App() {
         )}
       </div>
 
-      {filtered && results.length > 0 && (
+      {view.filtered && results.length > 0 && (
         <div className="mt-4">
-          <ShareButton title={shareTitle} url={shareUrl} count={results.length} />
+          <ShareButton
+            title={view.title}
+            url={`${window.location.origin}/${view.search}`}
+            count={results.length}
+          />
         </div>
       )}
 
       <div className="mt-4">
         <CuisineRail
           cuisines={cuisines}
-          active={state.cuisine}
+          active={view.cuisine}
           onSelect={(cuisine) => update({ cuisine })}
         />
       </div>
 
       <main className="mt-6 space-y-7">
         {results.map((p, i) => (
-          <PlaceCard key={p.id} place={p} index={i} highlight={fromQuery.rest} />
+          <PlaceCard key={p.id} place={p} index={i} highlight={view.query} />
         ))}
         {results.length === 0 && (
           <div className="py-14 text-center">
