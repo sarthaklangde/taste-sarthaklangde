@@ -29,6 +29,9 @@ function validate(d: Draft, dishes: Record<string, unknown>): string[] {
   if (typeof d.multipleLocations !== "boolean") errs.push("multipleLocations must be true or false")
   for (const k of ["note", "website", "skip", "neighborhood", "photo"])
     if (d[k] !== null && typeof d[k] !== "string") errs.push(`${k} must be a string or null`)
+  for (const [k, v] of Object.entries(d.newDishes ?? {}))
+    if (!v?.name || !v?.explainer || !Array.isArray(v?.aliases))
+      errs.push(`newDishes.${k} needs name, explainer and aliases (aliases can be [])`)
   for (const dish of d.dishes ?? []) {
     if (typeof dish !== "object" || !dish.id) {
       errs.push("each dish must be { id, labels, myWay }")

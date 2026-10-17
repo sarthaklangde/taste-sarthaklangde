@@ -1193,7 +1193,12 @@
     },
     "scallops": {
       "name": "Scallops",
-      "explainer": "The meat of a sea scallop, a shellfish with a sweet, tender flesh that is usually seared or grilled quickly so the outside browns and the centre stays soft."
+      "explainer": "The meat of a sea scallop, a shellfish with a sweet, tender flesh that is usually seared or grilled quickly so the outside browns and the centre stays soft.",
+      "aliases": [
+        "scallop",
+        "seared scallops",
+        "hotate"
+      ]
     },
     "street-burger": {
       "name": "Street Burger",
