@@ -40,6 +40,17 @@ function dishText(place: Place): string[] {
   })
 }
 
+/** Singular and plural forms, so "curry" finds "curries" and "burgers" finds "burger". */
+function variants(t: string): string[] {
+  const out = new Set([t])
+  if (t.length > 3) {
+    if (t.endsWith("ies")) out.add(t.slice(0, -3) + "y")
+    else if (t.endsWith("s")) out.add(t.slice(0, -1))
+    if (t.endsWith("y")) out.add(t.slice(0, -1) + "ies")
+  }
+  return [...out]
+}
+
 // Closed places always sort after open ones.
 const rank = (p: Place) => VERDICTS[p.verdict].rank + (p.status === "closed" ? 10 : 0)
 
@@ -69,9 +80,11 @@ export function search(places: Place[], q: string): Place[] {
     let score = 0
     let ok = true
     for (const t of ts) {
-      const dishIdx = dishes.findIndex((d) => d.includes(t))
+      const forms = variants(t)
+      const has = (text: string) => forms.some((f) => text.includes(f))
+      const dishIdx = dishes.findIndex(has)
       if (dishIdx >= 0) score += 10 - dishIdx
-      else if (other.includes(t)) score += 1
+      else if (has(other)) score += 1
       else {
         ok = false
         break
