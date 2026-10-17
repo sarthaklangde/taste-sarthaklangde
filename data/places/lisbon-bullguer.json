@@ -1,0 +1,28 @@
+{
+  "id": "lisbon-bullguer",
+  "name": "Bullguer",
+  "city": "lisbon",
+  "neighborhood": "Cais do Sodré",
+  "cuisine": "burger",
+  "verdict": "good-if-nearby",
+  "take": "My go-to after a late night at Cais do Sodré.",
+  "skip": null,
+  "dishes": [
+    {
+      "id": "bullguer",
+      "labels": [],
+      "myWay": "With fries."
+    }
+  ],
+  "note": "Open until 2:00 am.",
+  "tags": [
+    "late night"
+  ],
+  "price": null,
+  "lastVisited": "2026-10",
+  "status": "active",
+  "maps": "https://maps.app.goo.gl/kSwD337D2ZMwt5yPA",
+  "website": "https://www.bullguer.pt",
+  "multipleLocations": true,
+  "photo": null
+}
